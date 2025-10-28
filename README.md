@@ -1,4 +1,4 @@
-# Hybrid Specification Framework
+# Hybrid specification framework
 
 **A practical methodology for AI-accelerated software development through conversational prototyping, specification extraction, and multi-model validation.**
 
@@ -337,7 +337,7 @@ Week 7+:  Scale with Spec Kit
 - [GitHub Spec Kit](https://github.com/github/spec-kit) - Official production toolkit
 - [Spec-Driven Development Methodology](https://github.com/github/spec-kit/blob/main/spec-driven.md) - Deep dive into principles
 
-### This Framework's Resources
+### This framework's resources
 - [SPEC-KIT-BEST-PRACTICES.md](./SPEC-KIT-BEST-PRACTICES.md) - Transition guide from framework to Spec Kit
 - [FRAMEWORK-QUICKSTART.md](./FRAMEWORK-QUICKSTART.md) - Complete methodology overview
 - [TEMPLATE-1-CONVERSATIONAL-BUILD.md](./TEMPLATE-1-CONVERSATIONAL-BUILD.md) - Phase 1 guide

@@ -1,4 +1,4 @@
-# Template 2: Specification Extraction & Multi-Model Validation
+# Template 2: Specification extraction & Multi-Model Validation
 
 **Purpose**: Reverse-engineer your working implementation into comprehensive AI-readable specifications, then validate by having multiple AI models independently rebuild it.
 
@@ -18,7 +18,7 @@ Before starting specification extraction, you should have:
 
 **Instructions**: Use this prompt with an AI model to transform your working code into formal specifications. This works best with models that have seen your codebase.
 
-### Specification Extraction Prompt Template
+### Specification extraction prompt template
 
 ```
 I have a working [PROJECT TYPE] application that I want to formalize into comprehensive specifications following the GitHub Spec Kit framework.
@@ -118,7 +118,7 @@ Please start with constitution.md, then proceed through the other documents syst
 
 After receiving your specifications, validate them against these criteria:
 
-### Quality Checklist
+### Quality checklist
 
 #### Constitution.md
 - [ ] Project vision is clear and inspiring
@@ -148,7 +148,7 @@ After receiving your specifications, validate them against these criteria:
 - [ ] Time estimates are realistic
 - [ ] Dependencies are clear
 
-### Refinement Prompt (If Needed)
+### Refinement prompt (if needed)
 
 ```
 I've reviewed the specifications. Here are areas that need more detail:
@@ -175,7 +175,7 @@ Now test if your specifications actually work by having **multiple AI models** i
 Create a simple context document:
 
 ```markdown
-# Rebuild Experiment
+# Rebuild experiment
 
 **Your Task**: Implement the complete project described in these specifications.
 
@@ -246,14 +246,14 @@ Please start by confirming you understand the requirements, then begin implement
 
 After all models complete their implementations, analyze the results:
 
-### Analysis Framework
+### Analysis framework
 
 Create a comparison document locally:
 
 ```markdown
 # Multi-Model Specification Validation
 
-## Implementation Summary
+## Implementation summary
 
 | Model | Time | Files Created | Lines of Code | Status |
 |-------|------|---------------|---------------|--------|
@@ -261,7 +261,7 @@ Create a comparison document locally:
 | [Model 2] | [Time] | [Count] | [LOC] | [Working/Broken] |
 | [Model 3] | [Time] | [Count] | [LOC] | [Working/Broken] |
 
-## Feature Completeness
+## Feature completeness
 
 | Feature | Original | Model 1 | Model 2 | Model 3 |
 |---------|----------|---------|---------|---------|
@@ -269,7 +269,7 @@ Create a comparison document locally:
 | [Feature 2] | ✅ | ✅/❌/⚠️ | ✅/❌/⚠️ | ✅/❌/⚠️ |
 | [Feature 3] | ✅ | ✅/❌/⚠️ | ✅/❌/⚠️ | ✅/❌/⚠️ |
 
-## Specification Adherence
+## Specification adherence
 
 **Model 1: [Name]**
 - Spec Adherence: [%]
@@ -289,30 +289,30 @@ Create a comparison document locally:
 - What it missed: [List]
 - Interpretation differences: [List]
 
-## Specification Quality Insights
+## Specification quality insights
 
-### What Worked Well
+### What worked well
 - [Aspect of specs that all models interpreted correctly]
 - [Clear requirement that led to consistent implementations]
 
-### Ambiguities Discovered
+### Ambiguities discovered
 - [Requirement that was interpreted differently]
 - [Missing detail that caused models to guess]
 - [Vague acceptance criteria that led to variation]
 
-### Recommended Spec Improvements
+### Recommended spec improvements
 1. **[Section/Requirement]**: [What to add/clarify]
 2. **[Section/Requirement]**: [What to add/clarify]
 3. **[Section/Requirement]**: [What to add/clarify]
 
-## Success Metrics
+## Success metrics
 
 - **Cross-Model Agreement**: [%] (features implemented identically)
 - **Average Spec Adherence**: [%]
 - **Production-Ready Implementations**: [X] of [Y]
 - **Time to Implementation**: [Average time]
 
-## Key Learnings
+## Key learnings
 
 1. [Learning about specification quality]
 2. [Learning about model selection]
@@ -325,7 +325,7 @@ Create a comparison document locally:
 
 Based on your analysis, refine your specifications:
 
-### Refinement Prompt
+### Refinement prompt
 
 ```
 I tested my specifications with [N] AI models. Here's what I learned:
@@ -354,19 +354,19 @@ Focus on [specification.md / constitution.md / plan.md / tasks.md] based on the 
 
 Your specifications are production-ready when:
 
-### Quantitative Metrics
+### Quantitative metrics
 - ✅ **2+ AI models** achieve 90%+ feature completeness
 - ✅ **Average spec adherence** across models is 85%+
 - ✅ **Core functionality** works identically across implementations
 - ✅ **Time to implementation** is consistent (±30% variance)
 
-### Qualitative Signals
+### Qualitative signals
 - ✅ Models ask **<5 clarification questions** during implementation
 - ✅ Implementations are **architecturally similar**
 - ✅ Edge cases are **handled consistently**
 - ✅ You can **swap implementations** without user-visible changes
 
-### The Ultimate Test
+### The ultimate test
 - ✅ An AI model **you've never used before** can build your project successfully
 - ✅ The implementation is **production-ready** without refinement
 - ✅ You'd be **comfortable deploying** any of the AI-built versions
@@ -504,14 +504,14 @@ Once you have validated specifications:
 
 This Hybrid Specification Development Framework is **compatible with** but **independent from** [GitHub Spec Kit](https://github.com/github/spec-kit):
 
-### GitHub Spec Kit Approach
+### GitHub Spec Kit approach
 - Provides slash commands (`/speckit.constitution`, `/speckit.specify`, `/speckit.plan`, `/speckit.tasks`, `/speckit.implement`)
 - Uses interactive templates to guide AI during spec creation
 - Enforces constitutional principles through pre-implementation gates
 - Optimized for greenfield (0→1) development
 - Works with supported AI agents (Claude Code, GitHub Copilot, Cursor, Windsurf, etc.)
 
-### This Framework Approach
+### This framework approach
 - Uses conversational prototyping for exploration and learning
 - Extracts specs from working implementations (reverse engineering)
 - Validates specs through multi-model testing (empirical validation)

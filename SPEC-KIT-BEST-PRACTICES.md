@@ -110,16 +110,16 @@ The constitution defines YOUR project's rules. Start with these questions:
 ```markdown
 # constitution.md
 
-## Project Identity
+## Project identity
 - What is this project's single most important goal?
 - What makes this project unique?
 
-## Technical Principles
+## Technical principles
 - What technologies MUST be used? (e.g., "Always use SQLite for data storage")
 - What patterns MUST be followed? (e.g., "All components must be tested")
 - What should be AVOIDED? (e.g., "No premature abstraction")
 
-## Quality Standards
+## Quality standards
 - What defines "done" for a feature?
 - What level of documentation is required?
 - How should errors be handled?
@@ -135,15 +135,15 @@ The constitution defines YOUR project's rules. Start with these questions:
 ## Overview
 [Brief description of what you're building]
 
-## Core Features
+## Core features
 1. Feature A - [What it does, not how to build it]
 2. Feature B - [Focus on user outcomes]
 3. Feature C - [Describe the value, not the code]
 
-## Data Model
+## Data model
 [Define your entities and relationships]
 
-## User Interactions
+## User interactions
 [Describe workflows from user perspective]
 
 ## Non-Functional Requirements
@@ -185,7 +185,7 @@ Your constitution is the "operating system" for your project. Invest time upfron
 **Example from our AI Agent experiment:**
 
 ```markdown
-## Article I: Library-First Development
+## Article I: Library-first development
 When a task can be solved with a well-maintained library, we MUST use the library.
 
 Why: Our AI agent project validated this—implementations using libraries 
@@ -203,7 +203,7 @@ Every requirement should have clear success criteria:
 
 ✅ **Good Specification:**
 ```markdown
-## RSS Feed Processing
+## RSS feed processing
 The system shall fetch RSS feeds and extract articles with the following success criteria:
 - Fetch at least 10 feeds in under 30 seconds
 - Extract title, URL, date, and description from 95%+ of articles
@@ -213,7 +213,7 @@ The system shall fetch RSS feeds and extract articles with the following success
 
 ❌ **Poor Specification:**
 ```markdown
-## RSS Feed Processing
+## RSS feed processing
 The system should be able to get RSS feeds and save them.
 ```
 
@@ -378,7 +378,7 @@ You: "We need to add a rate limiting principle to avoid hammering RSS servers"
 You: "/update constitution.md"
 AI: "I'll add Article X: Rate Limiting. Here's a draft:
 
-## Article X: Respectful Rate Limiting
+## Article X: Respectful rate limiting
 - Wait 1 second between feed fetches
 - Implement exponential backoff for errors
 - Cache results for 15 minutes minimum
@@ -466,10 +466,10 @@ specify init --template my-org-template
 ## Overview
 [FILL IN: 2-3 sentence project description]
 
-## Core Features
+## Core features
 [FILL IN: List 3-5 primary features]
 
-## Data Model
+## Data model
 [FILL IN: Define entities and relationships]
 ```
 
@@ -481,7 +481,7 @@ specify init --template my-org-template
 [Describe the principle]
 
 <!-- Example:
-## Article I: Library-First Development
+## Article I: Library-first development
 When solving a common problem, prefer well-maintained libraries over custom code.
 
 Approved libraries:

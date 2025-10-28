@@ -1,4 +1,4 @@
-# Hybrid Specification Development Framework
+# Hybrid specification development framework
 
 **A practical approach to AI-accelerated engineering: Build fast, formalize smart, validate empirically.**
 
@@ -268,17 +268,17 @@ Track these to know if the framework is working:
 
 ## 🚀 What's Next?
 
-### Immediate Actions
+### Immediate actions
 1. Read `TEMPLATE-1-CONVERSATIONAL-BUILD.md`
 2. Start building something today
 3. See how far you get in 2-3 hours
 
-### This Week
+### This week
 1. Complete your first conversational build
 2. Extract specifications
 3. Test with one additional AI model
 
-### This Month
+### This month
 1. Refine your first validated specifications
 2. Build a second project using this framework
 3. Compare your experiences
@@ -290,12 +290,12 @@ Track these to know if the framework is working:
 
 This framework represents a shift in thinking:
 
-### Traditional AI-Assisted Engineering
+### Traditional AI-assisted engineering
 - AI helps you write code faster
 - You're still the primary builder
 - AI is a tool in your hands
 
-### Radical AI-Accelerated Engineering
+### Radical AI-accelerated engineering
 - AI builds complete systems
 - You're the architect and validator
 - AI is an autonomous executor
@@ -398,35 +398,35 @@ Week 8: Choose primary approach for your workflow
 
 Whether using this framework or Spec Kit, these principles ensure quality:
 
-#### Article I: Library-First Principle
+#### Article I: Library-first principle
 ```markdown
 ✅ DO: "Build authentication as standalone library"
 ❌ DON'T: "Add login to the main app"
 ```
 **Why**: Modularity enables reusability and testing
 
-#### Article III: Test-First Imperative
+#### Article III: Test-first imperative
 ```markdown
 ✅ DO: Write tests → Get approval → Implement
 ❌ DON'T: Implement → Write tests after
 ```
 **Why**: Tests define behavior before code exists
 
-#### Article VII: Simplicity Gate
+#### Article VII: Simplicity gate
 ```markdown
 ✅ DO: Start with ≤3 modules/projects
 ❌ DON'T: Create complex architecture upfront
 ```
 **Why**: Premature complexity is the root of technical debt
 
-#### Article VIII: Anti-Abstraction Gate
+#### Article VIII: Anti-abstraction gate
 ```markdown
 ✅ DO: Use Express.js directly
 ❌ DON'T: Create wrapper around Express "just in case"
 ```
 **Why**: Abstractions should emerge from real needs, not speculation
 
-#### Article IX: Integration-First Testing
+#### Article IX: Integration-first testing
 ```markdown
 ✅ DO: Test with real PostgreSQL database
 ❌ DON'T: Mock everything in unit tests
@@ -543,14 +543,14 @@ After 3-5 projects, you'll notice patterns. Codify them:
 
 **Custom Constitution** (`.specify/memory/constitution.md`):
 ```markdown
-# Our Company's Development Constitution
+# Our company's development constitution
 
-## Standard Principles (from Spec Kit)
+## Standard principles (from Spec Kit)
 [Article I-IX from standard constitution]
 
-## Our Custom Principles
+## Our custom principles
 
-### Article X: Performance Standards
+### Article X: Performance standards
 - All API endpoints: <100ms p95
 - All UI interactions: <16ms (60fps)
 - Bundle size: <200KB gzipped

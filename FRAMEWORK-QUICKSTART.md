@@ -17,7 +17,7 @@ This framework teaches you how to build software using a **hybrid approach** tha
 
 ## 🤔 Why Does This Matter?
 
-### Traditional AI-Assisted Development
+### Traditional AI-assisted development
 You: "Add a search feature"  
 AI: *Writes code*  
 You: "Actually, make it filter by date too"  
@@ -27,11 +27,11 @@ AI: *Modifies again*
 
 **Result**: It works, but the knowledge is trapped in your conversation history. Next time you need search, you start over.
 
-### Specification-Driven Development
+### Specification-driven development
 You: Build minimal prototype → Extract specifications → Validate with multiple AIs  
 **Result**: Reusable blueprint that ANY AI can execute. Build once, generate infinitely.
 
-### The Hybrid Advantage
+### The hybrid advantage
 Instead of choosing between "conversational fast" and "specification rigorous," you get both:
 - Prototype at conversational speed ⚡
 - Formalize into specifications 📋
@@ -130,7 +130,7 @@ Instead of choosing between "conversational fast" and "specification rigorous," 
 
 ## 📂 Getting Started
 
-### Step 1: Choose Your First Project
+### Step 1: Choose your first project
 
 Start with something meaningful but not mission-critical:
 - **Good**: A tool you'll actually use (dashboard, automation, aggregator)
@@ -164,7 +164,7 @@ Use the specification extraction prompt to:
 
 **Deliverable**: Production-ready specifications with validation data
 
-### Step 4: Share Your Findings (Optional)
+### Step 4: Share your findings (optional)
 
 Document your experience:
 - What worked well?
@@ -323,7 +323,7 @@ This framework is **compatible with** but **independent from** [GitHub Spec Kit]
 > **See: [SPEC-KIT-BEST-PRACTICES.md](./SPEC-KIT-BEST-PRACTICES.md)**
 
 ---
-### Understanding the Relationship
+### Understanding the relationship
 
 **GitHub Spec Kit**:
 - Official toolkit from GitHub with CLI and slash commands
@@ -339,7 +339,7 @@ This framework is **compatible with** but **independent from** [GitHub Spec Kit]
 - Emphasizes learning and empirical validation
 - Produces Spec Kit-compatible artifacts
 
-### Think of It This Way
+### Think of it this way
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -357,7 +357,7 @@ This framework is **compatible with** but **independent from** [GitHub Spec Kit]
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### Compatibility Matrix
+### Compatibility matrix
 
 | Aspect | This Framework | Spec Kit | Compatible? |
 |--------|---------------|----------|-------------|
@@ -375,7 +375,7 @@ This framework is **compatible with** but **independent from** [GitHub Spec Kit]
 
 ## 🎓 Best Practices: Getting the Most from Both
 
-### 1. Start Here, Graduate to Spec Kit
+### 1. Start here, graduate to Spec Kit
 
 **Phase 1 - Learn the Concepts** (This Framework):
 ```
@@ -506,11 +506,11 @@ Specs should evolve with your project:
 ```markdown
 ## Post-Implementation Review (Add to specs/)
 
-**What Worked**:
+**What worked**:
 - Specification X was clear → all models implemented identically
 - Constitutional gate Y caught over-engineering early
 
-**What Didn't**:
+**What didn't**:
 - Specification Z was ambiguous → models diverged
 - Gate W was too strict → needed justified exception
 
@@ -611,7 +611,7 @@ Standard Feature:
   2. Skip manual steps (you've already learned the concepts)
 ```
 
-### 9. Measure Success with Both Approaches
+### 9. Measure success with both approaches
 
 Track these metrics regardless of which tool you use:
 

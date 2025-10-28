@@ -18,45 +18,45 @@ This framework teaches you how to build software using a **hybrid approach** tha
 
 ## 🤔 Why This Framework Exists (And Why It's Standalone)
 
-### The Learning Gap in Specification-Driven Development
+### The learning gap in specification-driven development
 
 **The Problem**: Production tools like [GitHub Spec Kit](https://github.com/github/spec-kit) are optimized for developers who already understand specification principles. But how do you *learn* those principles?
 
 **This Framework's Answer**: Learn by doing—build conversationally, extract specifications from what worked, validate empirically with multiple AI models.
 
-### Six Key Differentiators
+### Six key differentiators
 
-#### 1. **Different Scope: Methodology vs. Tooling**
+#### 1. **Different scope: Methodology vs. tooling**
 - **Spec Kit**: Production CLI tool with slash commands, templates, and AI agent integration
 - **This Framework**: Educational methodology teaching specification principles through hands-on practice
 
 **Why It Matters**: You need to understand *why* specifications work before efficiently *producing* them with tools.
 
-#### 2. **Different Audience: Learners vs. Practitioners**
+#### 2. **Different audience: Learners vs. practitioners**
 - **Spec Kit**: Developers ready to standardize specification-driven workflows at scale
 - **This Framework**: Developers discovering specification-driven development for the first time
 
 **The Bridge**: ~25% audience overlap—learners who use this framework become practitioners who adopt Spec Kit.
 
-#### 3. **Different Structure: Reverse vs. Forward**
+#### 3. **Different structure: Reverse vs. forward**
 - **Spec Kit**: Forward workflow (write specs → build code)
 - **This Framework**: Reverse workflow (build code → extract specs → validate → refine)
 
 **Why Reverse Works for Learning**: It's easier to recognize good specifications by comparing against working implementations than to write them from scratch.
 
-#### 4. **Unique Validation Approach: Multi-Model Testing**
+#### 4. **Unique validation approach: Multi-model testing**
 - **Spec Kit**: Single AI agent builds from your specifications
 - **This Framework**: 2-3 AI models build independently, revealing specification ambiguities through divergent implementations
 
 **Empirical Evidence**: Our [ai-agent-spec experiment](https://github.com/GKAYED/ai-agent-spec) showed Claude (95%) and GPT-5 (90%) adherence vs Gemini (40%)—only multi-model testing revealed these differences.
 
-#### 5. **Different Purpose: Education vs. Efficiency**
+#### 5. **Different purpose: Education vs. efficiency**
 - **Spec Kit**: Maximize development velocity with standardized workflows
 - **This Framework**: Maximize learning through experimentation and validation
 
 **The Progression**: Learn with this framework (5-13 hours/project) → Graduate to Spec Kit (2-4 hours/project after mastery).
 
-#### 6. **Evolution Path: Independent → Complementary**
+#### 6. **Evolution path: Independent → Complementary**
 - **Phase 1 (Now)**: Standalone framework for learning specification principles
 - **Phase 2 (Future)**: Complementary resource—"Learn with Framework, Scale with Spec Kit"
 - **Phase 3 (Aspirational)**: Lightweight integration as Spec Kit's "Learning Lab" section
@@ -126,17 +126,17 @@ This framework teaches you how to build software using a **hybrid approach** tha
 
 ## 🚀 Quick Start
 
-### Complete Beginner
+### Complete beginner
 1. Read [FRAMEWORK-QUICKSTART.md](./FRAMEWORK-QUICKSTART.md) (20 min)
 2. Open [TEMPLATE-1-CONVERSATIONAL-BUILD.md](./TEMPLATE-1-CONVERSATIONAL-BUILD.md)
 3. Build something small using the prompts (2-3 hours)
 
-### Have a Working Project
+### Have a working project
 1. Open [TEMPLATE-2-SPEC-EXTRACTION.md](./TEMPLATE-2-SPEC-EXTRACTION.md)
 2. Use the extraction prompt to create specifications
 3. Validate with 2-3 AI models
 
-### Ready for Production Scale
+### Ready for production scale
 1. Read [SPEC-KIT-BEST-PRACTICES.md](./SPEC-KIT-BEST-PRACTICES.md)
 2. Install [GitHub Spec Kit](https://github.com/github/spec-kit)
 3. Apply your validated specifications to real projects
@@ -147,21 +147,21 @@ This framework teaches you how to build software using a **hybrid approach** tha
 
 This framework is **compatible with** but **independent from** GitHub Spec Kit:
 
-### GitHub Spec Kit Is...
+### GitHub Spec Kit is...
 - ✅ Official production toolkit
 - ✅ CLI with slash commands (`/constitution`, `/specification`, `/plan`, `/tasks`)
 - ✅ Template-driven spec creation
 - ✅ Integrated with AI coding agents (Claude, GPT-4, Copilot)
 - ✅ Optimized for velocity and standardization
 
-### This Framework Is...
+### This framework is...
 - 🎓 Educational methodology
 - 🔬 Conversational exploration and validation
 - 📊 Multi-model empirical testing
 - 🛠️ Tool-agnostic approach
 - 🧪 Reverse-engineering workflow (code → specs)
 
-### How They Work Together
+### How they work together
 
 **The Learning Journey**:
 ```
@@ -311,7 +311,7 @@ Week 7+:  Scale with Spec Kit
 
 ## 🔧 Technical Details
 
-### Compatible With
+### Compatible with
 - ✅ Any AI model (Claude, GPT, Gemini, etc.)
 - ✅ GitHub Spec Kit document structure
 - ✅ Standard development workflows
@@ -333,7 +333,7 @@ Week 7+:  Scale with Spec Kit
 
 ## 📖 Additional Resources
 
-### Official Documentation
+### Official documentation
 - [GitHub Spec Kit](https://github.com/github/spec-kit) - Official production toolkit
 - [Spec-Driven Development Methodology](https://github.com/github/spec-kit/blob/main/spec-driven.md) - Deep dive into principles
 
@@ -343,7 +343,7 @@ Week 7+:  Scale with Spec Kit
 - [TEMPLATE-1-CONVERSATIONAL-BUILD.md](./TEMPLATE-1-CONVERSATIONAL-BUILD.md) - Phase 1 guide
 - [TEMPLATE-2-SPEC-EXTRACTION.md](./TEMPLATE-2-SPEC-EXTRACTION.md) - Phase 2-5 guide
 
-### Example Implementation
+### Example implementation
 - [ai-agent-spec](https://github.com/GKAYED/ai-agent-spec) - Complete 3-model experiment validating this methodology
 - [Experiment Report](https://github.com/GKAYED/ai-agent-spec/blob/main/EXPERIMENT-REPORT.md) - Detailed findings and metrics
 - [Cross-Model Comparison](https://github.com/GKAYED/ai-agent-spec/blob/main/CROSS-MODEL-COMPARISON.md) - Model-by-model analysis
@@ -355,17 +355,17 @@ Week 7+:  Scale with Spec Kit
 
 This framework evolves based on real-world application. Share your experiences:
 
-**What Worked**:
+**What worked**:
 - Which constitutional principles had highest impact?
 - What specification patterns achieved best AI adherence?
 - How did multi-model validation reveal issues?
 
-**What Didn't**:
+**What didn't**:
 - Where did specifications fail despite validation?
 - Which AI models struggled with certain requirements?
 - What edge cases need better documentation?
 
-**Community Contributions**:
+**Community contributions**:
 - Example projects using this methodology
 - Additional constitutional articles for specific domains
 - Validation reports from new AI models

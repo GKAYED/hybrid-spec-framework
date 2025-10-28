@@ -1,8 +1,8 @@
-# Spec Kit Best Practices Guide
+# Spec Kit best practices guide
 
 > **Learning Path Position:** Advanced - Use this guide after completing Template 1 & 2, when you're ready to scale from learning to production workflows.
 
-## Table of Contents
+## Table of contents
 
 - [When to Transition to Spec Kit](#when-to-transition-to-spec-kit)
 - [Understanding Spec Kit's Philosophy](#understanding-spec-kits-philosophy)
@@ -16,7 +16,7 @@
 
 ---
 
-## When to Transition to Spec Kit
+## When to transition to Spec Kit
 
 **You're ready for Spec Kit when:**
 
@@ -37,9 +37,9 @@
 
 ---
 
-## Understanding Spec Kit's Philosophy
+## Understanding Spec Kit's philosophy
 
-### Core Principles
+### Core principles
 
 Spec Kit is built around three fundamental concepts:
 
@@ -73,7 +73,7 @@ Spec Kit supports three development phases:
 
 ---
 
-## Getting Started with Spec Kit CLI
+## Getting started with Spec Kit CLI
 
 ### Installation
 
@@ -85,7 +85,7 @@ npm install -g @github/specify-cli
 npx @github/specify-cli init
 ```
 
-### Your First Spec Kit Project
+### Your first Spec Kit project
 
 **Step 1: Initialize a new project**
 ```bash
@@ -164,7 +164,7 @@ specify chat
 
 ---
 
-## Best Practices for Using Spec Kit
+## Best practices for using Spec Kit
 
 ### 1. **Start with a Strong Constitution**
 
@@ -294,9 +294,9 @@ Spec Kit supports slash commands during AI chat sessions. Master these:
 
 ---
 
-## Slash Commands Mastery
+## Slash commands mastery
 
-### Command Reference
+### Command reference
 
 #### `/constitution`
 **Purpose:** Display your project's core principles and rules.
@@ -386,7 +386,7 @@ AI: "I'll add Article X: Rate Limiting. Here's a draft:
 Shall I commit this to constitution.md?"
 ```
 
-### Advanced Slash Command Patterns
+### Advanced slash command patterns
 
 #### Pattern 1: The Constitution Check
 Before implementing any significant feature:
@@ -419,9 +419,9 @@ As you learn during development:
 
 ---
 
-## Template Customization
+## Template customization
 
-### Creating Organization-Wide Templates
+### Creating organization-wide templates
 
 If you're on a team, create shared templates in your organization:
 
@@ -457,7 +457,7 @@ my-org-template/
 specify init --template my-org-template
 ```
 
-### Template Best Practices
+### Template best practices
 
 **1. Include Placeholder Sections**
 ```markdown
@@ -500,9 +500,9 @@ git push --tags
 
 ---
 
-## Combining Framework + Spec Kit
+## Combining framework + Spec Kit
 
-### The Hybrid Workflow
+### The hybrid workflow
 
 Use both tools in sequence for maximum learning and efficiency:
 
@@ -563,7 +563,7 @@ Use both tools in sequence for maximum learning and efficiency:
 - CI/CD integration
 - Version-controlled specifications
 
-### When to Return to the Framework
+### When to return to the framework
 
 Even after adopting Spec Kit, use this framework for:
 
@@ -574,7 +574,7 @@ Even after adopting Spec Kit, use this framework for:
 
 ---
 
-## Common Pitfalls to Avoid
+## Common pitfalls to avoid
 
 ### 1. **Over-Specification in Constitution**
 
@@ -655,9 +655,9 @@ git commit -m "docs: Update specs for feature X"
 
 ---
 
-## Success Metrics
+## Success metrics
 
-### How to Measure Spec Kit Effectiveness
+### How to measure Spec Kit effectiveness
 
 Track these metrics to know if you're using Spec Kit well:
 
@@ -708,9 +708,9 @@ Target: <8 hours for simple projects, <40 hours for complex
 
 ---
 
-## Next Steps
+## Next steps
 
-### Immediate Actions
+### Immediate actions
 
 1. **Install Spec Kit**
    ```bash
@@ -735,7 +735,7 @@ Target: <8 hours for simple projects, <40 hours for complex
    - Test final code with multiple AI models (framework approach)
    - Measure if Spec Kit improved your velocity or quality
 
-### Learning Resources
+### Learning resources
 
 - **Official Spec Kit Docs:** [github.com/github/spec-kit](https://github.com/github/spec-kit)
 - **Framework Templates:** Use Template 1 & 2 as Spec Kit prep work
@@ -752,9 +752,9 @@ Share your learnings:
 
 ---
 
-## Appendix: Quick Reference
+## Appendix: Quick reference
 
-### Spec Kit Commands Cheatsheet
+### Spec Kit commands cheatsheet
 ```bash
 specify init                      # Initialize new project
 specify init --template [name]    # Use a template
@@ -763,7 +763,7 @@ specify validate                  # Check spec file validity
 specify export                    # Export specs to markdown
 ```
 
-### Slash Commands Cheatsheet
+### Slash commands cheatsheet
 ```
 /constitution          # Display core principles
 /specification         # Show full technical spec
@@ -772,7 +772,7 @@ specify export                    # Export specs to markdown
 /update [file]         # Modify a spec file
 ```
 
-### File Structure Reference
+### File structure reference
 ```
 .specify/
 ├── constitution.md      # Core principles and rules

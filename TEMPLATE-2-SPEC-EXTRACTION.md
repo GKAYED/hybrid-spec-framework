@@ -14,7 +14,7 @@ Before starting specification extraction, you should have:
 
 ---
 
-## 🎯 Phase 1: Specification Extraction Prompt
+## 🎯 Phase 1: Specification extraction prompt
 
 **Instructions**: Use this prompt with an AI model to transform your working code into formal specifications. This works best with models that have seen your codebase.
 
@@ -114,7 +114,7 @@ Please start with constitution.md, then proceed through the other documents syst
 
 ---
 
-## 🔍 Phase 2: Specification Quality Review
+## 🔍 Phase 2: Specification quality review
 
 After receiving your specifications, validate them against these criteria:
 
@@ -166,11 +166,11 @@ Please enhance these sections with the level of detail needed for an AI to imple
 
 ---
 
-## 🤖 Phase 3: Multi-Model Validation (The Critical Test)
+## 🤖 Phase 3: Multi-model validation (the critical test)
 
 Now test if your specifications actually work by having **multiple AI models** independently rebuild your project.
 
-### Step 3.1: Prepare Experiment Context
+### Step 3.1: Prepare experiment context
 
 Create a simple context document:
 
@@ -205,7 +205,7 @@ Create a simple context document:
 Please implement this project based ONLY on the specifications provided.
 ```
 
-### Step 3.2: Run Parallel Implementations
+### Step 3.2: Run parallel implementations
 
 Test with 2-3 different AI models (recommended combinations):
 
@@ -219,7 +219,7 @@ Test with 2-3 different AI models (recommended combinations):
 - Model 2: Claude Opus (high capability)
 - Model 3: Claude Haiku (fast/efficient)
 
-### Step 3.3: Implementation Prompt (For Each Model)
+### Step 3.3: Implementation prompt (for each model)
 
 ```
 I have comprehensive specifications for a [PROJECT TYPE] project. I want you to implement the complete application based ONLY on these specifications.
@@ -242,7 +242,7 @@ Please start by confirming you understand the requirements, then begin implement
 
 ---
 
-## 📊 Phase 4: Cross-Model Analysis
+## 📊 Phase 4: Cross-model analysis
 
 After all models complete their implementations, analyze the results:
 
@@ -321,7 +321,7 @@ Create a comparison document locally:
 
 ---
 
-## 🎯 Phase 5: Specification Refinement (Iterative)
+## 🎯 Phase 5: Specification refinement (Iterative)
 
 Based on your analysis, refine your specifications:
 
@@ -489,7 +489,7 @@ By following this framework, you'll have:
 
 Once you have validated specifications:
 
-1. **Share Your Findings**: Document success metrics, model comparisons, lessons learned
+1. **Share Your Findings**: Document Success metrics, model comparisons, lessons learned
 2. **Build Your Next Project**: Start with specs instead of code
 3. **Create Domain-Specific Templates**: Adapt this framework for your specific use cases
 4. **Teach Others**: Help your team adopt specification-driven development
@@ -552,7 +552,7 @@ This Framework Path:
 
 ---
 
-## 🎓 Best Practices: Bridging Both Approaches
+## 🎓 Best practices: Bridging Both Approaches
 
 ### 1. Start with This Framework for Learning
 
@@ -562,7 +562,7 @@ This Framework Path:
 1. Build something small conversationally (Template 1)
 2. Extract specs manually (Template 2)
 3. Validate with 2-3 AI models
-4. See what works and what doesn't
+4. See What works and what doesn't
 
 **Outcome**: Deep understanding of what makes specs "good" vs "bad"
 
@@ -786,4 +786,4 @@ Think of these as complementary tools:
 
 ---
 
-Welcome to the future of development. 🎉
+Welcome to The future of development. 🎉

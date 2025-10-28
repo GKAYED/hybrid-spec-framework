@@ -1,18 +1,18 @@
 # Spec Kit best practices guide
 
-> **Learning Path Position:** Advanced - Use this guide after completing Template 1 & 2, when you're ready to scale from learning to production workflows.
+> **Learning path Position:** Advanced - Use this guide after completing Template 1 & 2, when you're ready to scale from learning to production workflows.
 
 ## Table of contents
 
 - [When to Transition to Spec Kit](#when-to-transition-to-spec-kit)
 - [Understanding Spec Kit's Philosophy](#understanding-spec-kits-philosophy)
-- [Getting Started with Spec Kit CLI](#getting-started-with-spec-kit-cli)
+- [Getting started with Spec Kit CLI](#getting-started-with-spec-kit-cli)
 - [Best Practices for Using Spec Kit](#best-practices-for-using-spec-kit)
 - [Slash Commands Mastery](#slash-commands-mastery)
 - [Template Customization](#template-customization)
 - [Combining Framework + Spec Kit](#combining-framework--spec-kit)
 - [Common Pitfalls to Avoid](#common-pitfalls-to-avoid)
-- [Success Metrics](#success-metrics)
+- [Success metrics](#success-metrics)
 
 ---
 
@@ -43,7 +43,7 @@
 
 Spec Kit is built around three fundamental concepts:
 
-#### 1. **Intent-Driven Development**
+#### 1. **Intent-driven development**
 ```
 Your specifications should capture WHAT you want, not HOW to build it.
 Let the AI handle the implementation details.
@@ -51,7 +51,7 @@ Let the AI handle the implementation details.
 
 **Framework Connection:** Our Template 2 teaches you to separate intent from implementation through the conversational → spec extraction process.
 
-#### 2. **Executable Specifications**
+#### 2. **Executable specifications**
 ```
 Specs aren't static documents—they're living instructions that:
 - Drive multi-step development workflows
@@ -61,7 +61,7 @@ Specs aren't static documents—they're living instructions that:
 
 **Framework Connection:** Our multi-model validation teaches you to measure if specs are truly "executable" by testing with different AI models.
 
-#### 3. **Multi-Phase Refinement**
+#### 3. **Multi-phase refinement**
 ```
 Spec Kit supports three development phases:
 - Greenfield: 0-to-1 new projects
@@ -166,7 +166,7 @@ specify chat
 
 ## Best practices for using Spec Kit
 
-### 1. **Start with a Strong Constitution**
+### 1. **Start with a strong constitution**
 
 Your constitution is the "operating system" for your project. Invest time upfront to define:
 
@@ -197,7 +197,7 @@ Approved Libraries:
 - Database: better-sqlite3
 ```
 
-### 2. **Make Specifications Measurable**
+### 2. **Make specifications measurable**
 
 Every requirement should have clear success criteria:
 
@@ -219,7 +219,7 @@ The system should be able to get RSS feeds and save them.
 
 **Framework Connection:** Use the validation checklist from Template 2 to ensure specs are measurable before importing to Spec Kit.
 
-### 3. **Use the Plan as Your Thinking Tool**
+### 3. **Use the plan as your thinking tool**
 
 `plan.md` is where you break down HOW to implement your specification:
 
@@ -245,7 +245,7 @@ Tasks:
 
 **Pro Tip:** Use your Template 1 initial build as the prototype for Phase 1. You've already validated it works!
 
-### 4. **Keep Tasks Atomic**
+### 4. **Keep tasks atomic**
 
 Each task in `tasks.md` should be completable in 1-4 hours:
 
@@ -263,7 +263,7 @@ Each task in `tasks.md` should be completable in 1-4 hours:
 - [ ] Build the RSS system
 ```
 
-### 5. **Version Control Your Specs**
+### 5. **Version control your specs**
 
 Your `.specify/` directory should be committed to git alongside your code:
 
@@ -278,7 +278,7 @@ git commit -m "Update specification: Add web scraping feature"
 - Collaborate on specification changes via pull requests
 - Track correlation between spec changes and code quality
 
-### 6. **Use Slash Commands Strategically**
+### 6. **Use slash commands strategically**
 
 Spec Kit supports slash commands during AI chat sessions. Master these:
 
@@ -388,7 +388,7 @@ Shall I commit this to constitution.md?"
 
 ### Advanced slash command patterns
 
-#### Pattern 1: The Constitution Check
+#### Pattern 1: The constitution check
 Before implementing any significant feature:
 ```
 1. You: "/constitution"
@@ -398,7 +398,7 @@ Before implementing any significant feature:
 5. [If yes] You: "/tasks - Create task for this"
 ```
 
-#### Pattern 2: The Spec Drift Detector
+#### Pattern 2: The spec drift detector
 When AI suggests something that feels "off":
 ```
 1. AI: "Let's add a MongoDB database for better scalability"
@@ -407,7 +407,7 @@ When AI suggests something that feels "off":
 4. You: "This violates our constitution. Propose an SQLite solution."
 ```
 
-#### Pattern 3: The Living Documentation Flow
+#### Pattern 3: The living documentation flow
 As you learn during development:
 ```
 1. You: [Discover that feed parsing needs custom error handling]
@@ -506,7 +506,7 @@ git push --tags
 
 Use both tools in sequence for maximum learning and efficiency:
 
-#### Phase 1: Learning (Use This Framework)
+#### Phase 1: Learning (use this framework)
 **Tools:** Template 1 + Template 2  
 **Duration:** 2-4 projects  
 **Goal:** Build intuition for what makes good specifications
@@ -526,7 +526,7 @@ Use both tools in sequence for maximum learning and efficiency:
 - How different AI models interpret instructions
 - What causes specification failures
 
-#### Phase 2: Transition (Hybrid Approach)
+#### Phase 2: Transition (hybrid approach)
 **Tools:** This Framework + Spec Kit  
 **Duration:** 2-3 projects  
 **Goal:** Apply learnings to Spec Kit workflows
@@ -544,7 +544,7 @@ Use both tools in sequence for maximum learning and efficiency:
 - Which Spec Kit features provide most value
 - How to customize constitutions effectively
 
-#### Phase 3: Production (Use Spec Kit)
+#### Phase 3: Production (use Spec Kit)
 **Tools:** Spec Kit CLI + Templates  
 **Duration:** Ongoing  
 **Goal:** Efficient, standardized specification-driven development
@@ -552,7 +552,7 @@ Use both tools in sequence for maximum learning and efficiency:
 ```
 1. specify init --template [your-org-template]
 2. Customize constitution based on project needs
-3. Write specifications (now you know what works!)
+3. Write specifications (now you know What works!)
 4. Use specify chat for AI-powered development
 5. Periodically validate with multiple models (framework approach)
 ```
@@ -576,7 +576,7 @@ Even after adopting Spec Kit, use this framework for:
 
 ## Common pitfalls to avoid
 
-### 1. **Over-Specification in Constitution**
+### 1. **Over-specification in constitution**
 
 ❌ **Problem:**
 ```markdown
@@ -599,7 +599,7 @@ Key principle: Consistency over personal preference.
 
 **Why:** Constitutions should focus on *architectural* principles, not linting rules. Let automated tools handle style.
 
-### 2. **Vague Specifications**
+### 2. **Vague specifications**
 
 ❌ **Problem:**
 ```markdown
@@ -629,13 +629,13 @@ The app should have user accounts and authentication.
 - Password reset email arrives in <5 minutes
 ```
 
-### 3. **Not Using Slash Commands**
+### 3. **Not using slash commands**
 
 ❌ **Problem:** Long AI conversation drifts from original specifications.
 
 ✅ **Solution:** Use `/constitution` every 5-10 messages to re-ground the AI.
 
-### 4. **Forgetting to Update Specs**
+### 4. **Forgetting to update specs**
 
 ❌ **Problem:** Your code evolves but specifications stay frozen.
 
@@ -647,7 +647,7 @@ git add .specify/
 git commit -m "docs: Update specs for feature X"
 ```
 
-### 5. **Skipping the Plan**
+### 5. **Skipping the plan**
 
 ❌ **Problem:** Jumping straight from specification to code.
 
@@ -661,7 +661,7 @@ git commit -m "docs: Update specs for feature X"
 
 Track these metrics to know if you're using Spec Kit well:
 
-#### 1. **Specification Stability**
+#### 1. **Specification stability**
 ```
 Spec Changes Per Week = (# of specification.md commits) / (weeks since project start)
 
@@ -670,7 +670,7 @@ Target: <2 changes per week after initial setup
 
 **What it means:** Frequent spec changes suggest you're discovering requirements late. Good specs stabilize after initial drafting.
 
-#### 2. **AI Adherence Rate**
+#### 2. **AI adherence rate**
 ```
 Adherence Rate = (Features implemented correctly) / (Total features) × 100%
 
@@ -679,7 +679,7 @@ Target: 85%+ across multiple AI models
 
 **How to measure:** Use this framework's multi-model validation on Spec Kit projects!
 
-#### 3. **Task Completion Velocity**
+#### 3. **Task completion velocity**
 ```
 Velocity = (Tasks completed this week) / (Tasks completed last week)
 
@@ -688,16 +688,16 @@ Target: Consistent velocity (1.0) or improving (>1.0)
 
 **What it means:** If velocity drops, your tasks might be too large or specs too vague.
 
-#### 4. **Constitutional Violations**
+#### 4. **Constitutional violations**
 ```
 Violations = (# of code reviews requesting changes for principle violations)
 
 Target: <1 violation per 10 pull requests
 ```
 
-**How to track:** Tag PR comments that cite constitutional violations.
+**How to track:** Tag PR comments that cite Constitutional violations.
 
-#### 5. **Time to First Working Feature**
+#### 5. **Time to first working feature**
 ```
 Time to First Feature = (Hours from 'specify init' to first deployable feature)
 

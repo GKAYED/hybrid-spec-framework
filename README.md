@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 What Is This?
+## 🎯 What is this?
 
 This framework teaches you how to build software using a **hybrid approach** that combines:
 
@@ -16,7 +16,7 @@ This framework teaches you how to build software using a **hybrid approach** tha
 
 ---
 
-## 🤔 Why This Framework Exists (And Why It's Standalone)
+## 🤔 Why this framework exists (and why it's standalone)
 
 ### The learning gap in specification-driven development
 
@@ -67,7 +67,7 @@ This framework teaches you how to build software using a **hybrid approach** tha
 
 ## 📚 Framework Components
 
-### 1. [FRAMEWORK-QUICKSTART.md](./FRAMEWORK-QUICKSTART.md) - Start Here
+### 1. [FRAMEWORK-QUICKSTART.md](./FRAMEWORK-QUICKSTART.md) - Start here
 - **Purpose**: Overview, philosophy, and complete workflow
 - **Contents**:
   - What this framework is and why it matters
@@ -77,7 +77,7 @@ This framework teaches you how to build software using a **hybrid approach** tha
   - Learning path from beginner to expert
   - Decision tree for choosing approaches
 
-**Read this first** to understand the big picture.
+**Read this first** to understand The big picture.
 
 ---
 
@@ -110,14 +110,14 @@ This framework teaches you how to build software using a **hybrid approach** tha
 
 ---
 
-### 4. [SPEC-KIT-BEST-PRACTICES.md](./SPEC-KIT-BEST-PRACTICES.md) - Advanced Guide
+### 4. [SPEC-KIT-BEST-PRACTICES.md](./SPEC-KIT-BEST-PRACTICES.md) - Advanced guide
 - **Purpose**: Transition from framework learning to Spec Kit production
 - **Contents**:
   - When to transition from framework to Spec Kit
   - Spec Kit CLI commands and slash commands mastery
   - Template customization for teams
   - Combining framework + Spec Kit workflows
-  - Common pitfalls and success metrics
+  - Common pitfalls and Success metrics
   - Quick reference cheatsheet
 
 **Use this** when you're ready to scale from learning to production efficiency.
@@ -223,7 +223,7 @@ This framework is based on real experiments with proven results:
 
 ---
 
-## 🎓 What You'll Learn
+## 🎓 What you'll learn
 
 ### Concepts
 - How specifications drive AI development (and when they don't)
@@ -245,41 +245,41 @@ This framework is based on real experiments with proven results:
 
 ---
 
-## 💡 Key Principles
+## 💡 Key principles
 
-### 1. Start Simple, Validate Empirically
+### 1. Start simple, validate empirically
 Don't theorize about what specs should look like—build, extract, test with multiple AI models, measure results.
 
 **Why**: Our experiment showed theoretical specs failed but extracted specs succeeded (90%+ adherence).
 
-### 2. Specifications for Humans AND AI
+### 2. Specifications for humans AND AI
 Good specs explain WHY to humans while providing WHAT and HOW to AI with precision.
 
 **Why**: Humans maintain code, AI builds it—both need understanding.
 
-### 3. Constitutional Discipline
+### 3. Constitutional discipline
 Follow architectural principles (library-first, test-first, simplicity, anti-abstraction) regardless of which tool you use.
 
 **Why**: Principles are model-agnostic; they work across Claude, GPT-5, and future AI systems.
 
-### 4. Cross-Model Validation
+### 4. Cross-model validation
 When 2-3 AI models build the same thing from your specs, you know they're solid.
 
 **Why**: Single-model validation hides ambiguities that multi-model testing reveals.
 
-### 5. Continuous Refinement
+### 5. Continuous refinement
 Specs evolve based on real implementation experience, not theoretical perfection.
 
 **Why**: The best specifications emerge from iterative learning, not first drafts.
 
-### 6. Graduate to Production Tools
+### 6. Graduate to production tools
 This framework teaches principles; Spec Kit scales production. Use the right tool for the phase.
 
 **Why**: Learning and efficiency require different workflows—master one, then the other.
 
 ---
 
-## 📈 Typical Journey
+## 📈 Typical journey
 
 ```
 Week 1-2: Build 2-3 small projects conversationally
@@ -351,7 +351,7 @@ Week 7+:  Scale with Spec Kit
 
 ---
 
-## 🤝 How to Contribute
+## 🤝 How to contribute
 
 This framework evolves based on real-world application. Share your experiences:
 

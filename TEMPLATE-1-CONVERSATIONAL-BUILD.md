@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 Goal Setting (Start Here)
+## 🎯 Goal setting (start here)
 
 Before you begin, define your project clearly:
 
@@ -23,11 +23,11 @@ SUCCESS CRITERIA: [What does "working" mean?]
 
 ---
 
-## 📋 Phase 1: Initial Build Prompt (Minimum Viable Features)
+## 📋 Phase 1: Initial build prompt (minimum viable features)
 
 **Instructions**: Use this template to prompt your AI model. Fill in the bracketed sections with your specific requirements.
 
-### Initial Prompt Template
+### Initial prompt template
 
 ```
 I want to build [PROJECT NAME] - a [TYPE OF APPLICATION] that [CORE PURPOSE].
@@ -63,11 +63,11 @@ Start with the most straightforward implementation. We'll refine after I see it 
 
 ---
 
-## 🔄 Phase 2: Review & Refinement Prompts
+## 🔄 Phase 2: Review & refinement prompts
 
 After your initial build is running, use these prompts to improve specific areas:
 
-### Refinement Prompt 1: Core Functionality Enhancement
+### Refinement prompt 1: Core functionality enhancement
 
 ```
 The [FEATURE NAME] is working, but I'd like to enhance it:
@@ -86,7 +86,7 @@ SPECIFIC REQUIREMENTS:
 Please update the implementation while maintaining backward compatibility with existing functionality.
 ```
 
-### Refinement Prompt 2: Error Handling & Edge Cases
+### Refinement prompt 2: Error handling & edge cases
 
 ```
 I've tested the application and found these edge cases that need handling:
@@ -102,10 +102,10 @@ Actual: [What happens now]
 Please add robust error handling, input validation, and user-friendly error messages for these cases.
 ```
 
-### Refinement Prompt 3: Performance & UX Polish
+### Refinement prompt 3: Performance & UX polish
 
 ```
-The functionality is solid. Now I want to improve the user experience:
+The functionality is solid. Now I want to improve the User experience:
 
 PERFORMANCE:
 - [e.g., "Loading feels slow - can we add loading indicators?"]
@@ -126,17 +126,17 @@ Please implement these improvements while keeping the core functionality intact.
 
 ---
 
-## ✅ Phase 3: Validation Checklist
+## ✅ Phase 3: Validation checklist
 
 Before moving to specification extraction, verify your application meets these criteria:
 
-### Functional Completeness
+### Functional completeness
 - [ ] All core features work as expected
 - [ ] Edge cases are handled gracefully
 - [ ] Error messages are clear and helpful
 - [ ] Sample/test data demonstrates all functionality
 
-### Code Quality
+### Code quality
 - [ ] File structure is logical and organized
 - [ ] Code is reasonably clean (not necessarily perfect)
 - [ ] No obvious bugs or crashes
@@ -148,7 +148,7 @@ Before moving to specification extraction, verify your application meets these c
 - [ ] Running the app is straightforward
 - [ ] Any configuration is documented
 
-### User Experience
+### User experience
 - [ ] Interface is intuitive (for your target user)
 - [ ] Loading states are visible
 - [ ] Actions provide feedback
@@ -156,29 +156,29 @@ Before moving to specification extraction, verify your application meets these c
 
 ---
 
-## 🎓 Pro Tips for Conversational Building
+## 🎓 Pro tips for conversational building
 
-### 1. **Start Stupidly Simple**
+### 1. **Start stupidly simple**
 Don't try to build everything at once. Get ONE feature working perfectly before adding more.
 
 **Bad**: "Build a social media platform with posts, comments, likes, notifications, and chat"
 **Good**: "Build a system to create and display posts. We'll add interactions later."
 
-### 2. **Be Specific About Inputs and Outputs**
+### 2. **Be specific about inputs and outputs**
 Vague requests get vague results.
 
 **Bad**: "Add a search feature"
 **Good**: "Add a search box that filters posts by title in real-time as I type, showing 'No results found' if nothing matches"
 
-### 3. **Reference Existing Behavior**
+### 3. **Reference existing behavior**
 Connect new features to what already works.
 
 **Example**: "The current post list shows 10 items. Add pagination buttons at the bottom that work the same way, loading 10 more items per page."
 
-### 4. **Test Immediately After Each Change**
+### 4. **Test immediately after each change**
 Don't stack multiple refinements before testing. Verify each change works before moving on.
 
-### 5. **Know When to Stop Refining**
+### 5. **Know when to stop refining**
 You're ready for spec extraction when:
 - Core features work reliably
 - You'd be comfortable showing this to someone
@@ -187,7 +187,7 @@ You're ready for spec extraction when:
 
 ---
 
-## 📝 What You Should Have at the End
+## 📝 What you should have at the end
 
 Before moving to Template 2 (Spec Extraction), you should have:
 
@@ -213,7 +213,7 @@ Before moving to Template 2 (Spec Extraction), you should have:
 
 ---
 
-## 🚀 Next Step
+## 🚀 Next step
 
 Once your conversational build is satisfactory, proceed to **Template 2: Specification Extraction** to formalize your knowledge into AI-readable specifications that can reproduce this project.
 
@@ -223,7 +223,7 @@ Once your conversational build is satisfactory, proceed to **Template 2: Specifi
 
 ---
 
-## 🎓 Learn More
+## 🎓 Learn more
 
 - **[Framework Overview](./FRAMEWORK-QUICKSTART.md)** - Understand how this fits into spec-driven development
 - **[Template 2: Specification Extraction](./TEMPLATE-2-SPEC-EXTRACTION.md)** - Next phase of the framework

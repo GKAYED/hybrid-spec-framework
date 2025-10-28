@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 What Is This?
+## 🎯 What is this?
 
 This framework teaches you how to build software using a **hybrid approach** that combines:
 1. **Conversational AI prototyping** (fast iteration, natural interaction)
@@ -15,7 +15,7 @@ This framework teaches you how to build software using a **hybrid approach** tha
 
 ---
 
-## 🤔 Why Does This Matter?
+## 🤔 Why does this matter?
 
 ### Traditional AI-assisted development
 You: "Add a search feature"  
@@ -40,16 +40,16 @@ Instead of choosing between "conversational fast" and "specification rigorous," 
 
 ---
 
-## 📊 When Should You Use This?
+## 📊 When should you use this?
 
-### ✅ Perfect For:
+### ✅ Perfect for:
 - **New projects** where you're exploring the problem space
 - **Complex features** that need to be reproducible
 - **Team projects** where specifications serve as documentation
 - **Long-term systems** that will evolve over time
 - **Learning AI capabilities** empirically rather than theoretically
 
-### ⚠️ Not Ideal For:
+### ⚠️ Not ideal for:
 - **Throwaway prototypes** you'll never touch again
 - **Trivial features** (< 100 lines of code)
 - **Highly regulated domains** where specifications must come first
@@ -57,7 +57,7 @@ Instead of choosing between "conversational fast" and "specification rigorous," 
 
 ---
 
-## 🚀 The Complete Workflow
+## 🚀 The complete workflow
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -128,7 +128,7 @@ Instead of choosing between "conversational fast" and "specification rigorous," 
 
 ---
 
-## 📂 Getting Started
+## 📂 Getting started
 
 ### Step 1: Choose your first project
 
@@ -174,11 +174,11 @@ Document your experience:
 
 ---
 
-## 💡 Key Insights from Real Experiments
+## 💡 Key insights from real experiments
 
 Based on validated experiments (see: [ai-agent-spec repository](https://github.com/GKAYED/ai-agent-spec)):
 
-### ✅ What Works
+### ✅ What works
 
 1. **Cross-Model Validation is Powerful**
    - When 2 of 3 models build the same thing, you know your specs are solid
@@ -200,7 +200,7 @@ Based on validated experiments (see: [ai-agent-spec repository](https://github.c
    - Specification + AI: 3-4 hours
    - **Time savings: 92%**
 
-### ⚠️ What to Watch For
+### ⚠️ What to watch for
 
 1. **Not All Models Interpret Specs the Same**
    - Some prioritize completeness (Claude, GPT)
@@ -220,9 +220,9 @@ Based on validated experiments (see: [ai-agent-spec repository](https://github.c
 
 ---
 
-## 🎓 Learning Path
+## 🎓 Learning path
 
-### Beginner: Run the Templates
+### Beginner: Run the templates
 1. Build something simple with Template 1 (e.g., to-do list, note taker)
 2. Extract specs with Template 2
 3. Test with 2 AI models
@@ -230,7 +230,7 @@ Based on validated experiments (see: [ai-agent-spec repository](https://github.c
 
 **Goal**: Understand the workflow hands-on
 
-### Intermediate: Optimize for Your Domain
+### Intermediate: Optimize for your domain
 1. Adapt templates to your tech stack
 2. Create domain-specific prompt libraries
 3. Document model performance patterns
@@ -238,7 +238,7 @@ Based on validated experiments (see: [ai-agent-spec repository](https://github.c
 
 **Goal**: Make the framework yours
 
-### Advanced: Scale the Methodology
+### Advanced: Scale the methodology
 1. Use specs as team documentation
 2. Build specification repositories
 3. Create org-specific AI guidelines
@@ -248,7 +248,7 @@ Based on validated experiments (see: [ai-agent-spec repository](https://github.c
 
 ---
 
-## 📊 Success Metrics
+## 📊 Success metrics
 
 Track these to know if the framework is working:
 
@@ -286,7 +286,7 @@ Track these to know if the framework is working:
 
 ---
 
-## 🤝 Philosophy: From Assisted to Accelerated
+## 🤝 Philosophy: From assisted to accelerated
 
 This framework represents a shift in thinking:
 
@@ -306,7 +306,7 @@ This framework represents a shift in thinking:
 
 ---
 
-## � How This Relates to GitHub Spec Kit
+## � How this relates to GitHub Spec Kit
 
 This framework is **compatible with** but **independent from** [GitHub Spec Kit](https://github.com/github/spec-kit), an open-source toolkit for specification-driven development.
 
@@ -318,7 +318,7 @@ This framework is **compatible with** but **independent from** [GitHub Spec Kit]
 > - Detailed CLI command reference and slash commands mastery
 > - Template customization for teams
 > - Combining framework + Spec Kit workflows
-> - Common pitfalls and success metrics
+> - Common pitfalls and Success metrics
 > 
 > **See: [SPEC-KIT-BEST-PRACTICES.md](./SPEC-KIT-BEST-PRACTICES.md)**
 
@@ -373,7 +373,7 @@ This framework is **compatible with** but **independent from** [GitHub Spec Kit]
 
 ---
 
-## 🎓 Best Practices: Getting the Most from Both
+## 🎓 Best practices: Getting the Most from Both
 
 ### 1. Start here, graduate to Spec Kit
 
@@ -665,13 +665,13 @@ Track these metrics regardless of which tool you use:
 > - Detailed CLI command reference and slash commands mastery
 > - Template customization for teams
 > - Combining framework + Spec Kit workflows
-> - Common pitfalls and success metrics
+> - Common pitfalls and Success metrics
 > 
 > **See: [SPEC-KIT-BEST-PRACTICES.md](./SPEC-KIT-BEST-PRACTICES.md)**
 
 ---
 
-💡 The Big Picture
+💡 The big picture
 
 ```
 ┌──────────────────────────────────────────────────────────────┐

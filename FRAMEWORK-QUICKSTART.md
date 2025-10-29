@@ -7,9 +7,9 @@
 ## 🎯 What is this?
 
 This framework teaches you how to build software using a **hybrid approach** that combines:
-1. **Conversational AI prototyping** (fast iteration, natural interaction)
-2. **Specification formalization** (explicit knowledge capture)
-3. **Multi-model validation** (empirical quality verification)
+1. **Conversational AI prototyping** (fast iteration, natural interaction).
+2. **Specification formalization** (explicit knowledge capture).
+3. **Multi-model validation** (empirical quality verification).
 
 **Result**: Production-ready specifications that multiple AI models can execute with 90%+ consistency.
 
@@ -18,11 +18,11 @@ This framework teaches you how to build software using a **hybrid approach** tha
 ## 🤔 Why does this matter?
 
 ### Traditional AI-assisted development
-You: "Add a search feature"  
-AI: *Writes code*  
-You: "Actually, make it filter by date too"  
-AI: *Modifies code*  
-You: "Hmm, can we add autocomplete?"  
+You: "Add a search feature"
+AI: *Writes code*
+You: "Actually, make it filter by date too"
+AI: *Modifies code*
+You: "Hmm, can we add autocomplete?"
 AI: *Modifies again*
 
 **Result**: It works, but the knowledge is trapped in your conversation history. Next time you need search, you start over.
@@ -32,28 +32,28 @@ You: Build minimal prototype → Extract specifications → Validate with multip
 **Result**: Reusable blueprint that ANY AI can execute. Build once, generate infinitely.
 
 ### The hybrid advantage
-Instead of choosing between "conversational fast" and "specification rigorous," you get both:
-- Prototype at conversational speed ⚡
-- Formalize into specifications 📋
-- Validate across AI models ✅
-- Deploy with confidence 🚀
+Instead of choosing between "conversational fast" and "specification rigorous", you get both:
+- Prototype at conversational speed ⚡.
+- Formalize into specifications 📋.
+- Validate across AI models ✅.
+- Deploy with confidence 🚀.
 
 ---
 
 ## 📊 When should you use this?
 
 ### ✅ Perfect for:
-- **New projects** where you're exploring the problem space
-- **Complex features** that need to be reproducible
-- **Team projects** where specifications serve as documentation
-- **Long-term systems** that will evolve over time
-- **Learning AI capabilities** empirically rather than theoretically
+- **New projects** where you're exploring the problem space.
+- **Complex features** that need to be reproducible.
+- **Team projects** where specifications serve as documentation.
+- **Long-term systems** that will evolve over time.
+- **Learning AI capabilities** empirically rather than theoretically.
 
 ### ⚠️ Not ideal for:
-- **Throwaway prototypes** you'll never touch again
-- **Trivial features** (< 100 lines of code)
-- **Highly regulated domains** where specifications must come first
-- **One-time scripts** with no reuse value
+- **Throwaway prototypes** you'll never touch again.
+- **Trivial features** (< 100 lines of code).
+- **Highly regulated domains** where specifications must come first.
+- **One-time scripts** with no reuse value.
 
 ---
 
@@ -69,8 +69,8 @@ Instead of choosing between "conversational fast" and "specification rigorous," 
 │  │  4. Refine with targeted prompts                      │  │
 │  │  5. Validate it matches your vision                   │  │
 │  └───────────────────────────────────────────────────────┘  │
-│  ⏱️ Time: 1-3 hours                                          │
-│  📦 Output: Working implementation (your reference)          │
+│  ⏱️ Time: 1-3 hours                                         │
+│  📦 Output: Working implementation (your reference)         │
 └─────────────────────────────────────────────────────────────┘
                             ↓
 ┌─────────────────────────────────────────────────────────────┐
@@ -84,12 +84,12 @@ Instead of choosing between "conversational fast" and "specification rigorous," 
 │  │  2. Review against quality checklist                  │  │
 │  │  3. Refine ambiguous sections                         │  │
 │  └───────────────────────────────────────────────────────┘  │
-│  ⏱️ Time: 1-3 hours                                          │
-│  📦 Output: 4 specification documents (~75K chars)           │
+│  ⏱️ Time: 1-3 hours                                         │
+│  📦 Output: 4 specification documents (~75K chars)          │
 └─────────────────────────────────────────────────────────────┘
                             ↓
 ┌─────────────────────────────────────────────────────────────┐
-│  PHASE 3: MULTI-MODEL VALIDATION (Template 2)              │
+│  PHASE 3: MULTI-MODEL VALIDATION (Template 2)               │
 │  ┌───────────────────────────────────────────────────────┐  │
 │  │  1. Give specs to 2-3 different AI models             │  │
 │  │  2. Each builds independently (no code sharing)       │  │
@@ -98,7 +98,7 @@ Instead of choosing between "conversational fast" and "specification rigorous," 
 │  │  5. Identify specification gaps                       │  │
 │  └───────────────────────────────────────────────────────┘  │
 │  ⏱️ Time: 2-5 hours (AI implementation time)                │
-│  📦 Output: 2-3 independent implementations + analysis       │
+│  📦 Output: 2-3 independent implementations + analysis      │
 └─────────────────────────────────────────────────────────────┘
                             ↓
 ┌─────────────────────────────────────────────────────────────┐
@@ -110,8 +110,8 @@ Instead of choosing between "conversational fast" and "specification rigorous," 
 │  │  4. Select best implementation for production         │  │
 │  │  5. Document learnings                                │  │
 │  └───────────────────────────────────────────────────────┘  │
-│  ⏱️ Time: 1-2 hours                                          │
-│  📦 Output: Production-ready specs + validated code          │
+│  ⏱️ Time: 1-2 hours                                         │
+│  📦 Output: Production-ready specs + validated code         │
 └─────────────────────────────────────────────────────────────┘
                             ↓
                     ┌───────────────┐
@@ -123,8 +123,8 @@ Instead of choosing between "conversational fast" and "specification rigorous," 
                     └───────────────┘
 ```
 
-**Total Time Investment**: 5-13 hours  
-**What You Get**: Validated specifications, multiple implementations, deep AI understanding
+**Total Time Investment**: 5-13 hours.
+**What You Get**: Validated specifications, multiple implementations, deep AI understanding.
 
 ---
 
@@ -133,36 +133,36 @@ Instead of choosing between "conversational fast" and "specification rigorous," 
 ### Step 1: Choose your first project
 
 Start with something meaningful but not mission-critical:
-- **Good**: A tool you'll actually use (dashboard, automation, aggregator)
-- **Bad**: A theoretical example or tutorial project
+- **Good**: A tool you'll actually use (dashboard, automation, aggregator).
+- **Bad**: A theoretical example or tutorial project.
 
-**Ideal Size**: 500-2,000 lines of code, 3-7 core features
+**Ideal Size**: 500-2,000 lines of code, 3-7 core features.
 
 ### Step 2: Open Template 1
 
 File: `TEMPLATE-1-CONVERSATIONAL-BUILD.md`
 
 Follow the prompts to:
-1. Define your project goal clearly
-2. Identify 3-5 minimum features
-3. Use the initial build prompt
-4. Refine iteratively
-5. Validate it works
+1. Define your project goal clearly.
+2. Identify 3-5 minimum features.
+3. Use the initial build prompt.
+4. Refine iteratively.
+5. Validate it works.
 
-**Deliverable**: Working implementation you're proud of
+**Deliverable**: Working implementation you're proud of.
 
 ### Step 3: Open Template 2
 
 File: `TEMPLATE-2-SPEC-EXTRACTION.md`
 
 Use the specification extraction prompt to:
-1. Generate 4 specification documents
-2. Review quality
-3. Test with 2-3 AI models
-4. Analyze results
-5. Refine specs
+1. Generate 4 specification documents.
+2. Review quality.
+3. Test with 2-3 AI models.
+4. Analyze results.
+5. Refine specs.
 
-**Deliverable**: Production-ready specifications with validation data
+**Deliverable**: Production-ready specifications with validation data.
 
 ### Step 4: Share your findings (optional)
 
@@ -181,70 +181,70 @@ Based on validated experiments (see: [ai-agent-spec repository](https://github.c
 ### ✅ What works
 
 1. **Cross-Model Validation is Powerful**
-   - When 2 of 3 models build the same thing, you know your specs are solid
-   - Disagreement reveals specification ambiguities you'd never catch alone
+   - When 2 of 3 models build the same thing, you know your specs are solid.
+   - Disagreement reveals specification ambiguities you'd never catch alone.
 
 2. **Specifications Pay for Themselves Immediately**
-   - 2-3 hours to create specs
-   - Enables 1-2 hour implementations per model
-   - Break even on the first re-build, infinite ROI after
+   - 2-3 hours to create specs.
+   - Enables 1-2 hour implementations per model.
+   - Break even on the first re-build, infinite ROI after.
 
 3. **Model Selection MATTERS**
-   - Claude Sonnet 4.5: 95% spec adherence, production-ready
-   - GPT-5: 90% spec adherence, production-ready
-   - Gemini 2.5 Pro: 40% spec adherence, prototype-level
-   - It's not better/worse—it's different philosophies
+   - Claude Sonnet 4.5: 95% spec adherence, production-grade.
+   - GPT-5: 90% spec adherence, production-grade.
+   - Gemini 2.5 Pro: 40% spec adherence, prototype-level.
+   - It's not better/worse. It's different philosophies.
 
 4. **Time Economics are Compelling**
-   - Traditional development: 40-45 hours
-   - Specification + AI: 3-4 hours
+   - Traditional development: 40-45 hours.
+   - Specification + AI: 3-4 hours.
    - **Time savings: 92%**
 
 ### ⚠️ What to watch for
 
 1. **Not All Models Interpret Specs the Same**
-   - Some prioritize completeness (Claude, GPT)
-   - Some prioritize minimalism (Gemini)
-   - Test before production use
+   - Some prioritize completeness (Claude, GPT).
+   - Some prioritize minimalism (Gemini).
+   - Test before production use.
 
 2. **Vague Requirements = Vague Results**
-   - "Should be fast" → Models guess
-   - "API response <100ms" → Models know exactly what to build
+   - "Should be fast" → Models guess.
+   - "API response <100ms" → Models know exactly what to build.
 
 3. **Examples Clarify Intent**
-   - One API request/response example > 3 paragraphs of description
+   - One API request/response example > 3 paragraphs of description.
 
 4. **90% is the Target, Not 100%**
-   - Different models have different strengths
-   - Focus on core feature consistency
+   - Different models have different strengths.
+   - Focus on core feature consistency.
 
 ---
 
 ## 🎓 Learning path
 
 ### Beginner: Run the templates
-1. Build something simple with Template 1 (e.g., to-do list, note taker)
-2. Extract specs with Template 2
-3. Test with 2 AI models
-4. See what happens
+1. Build something simple with Template 1 (e.g., to-do list, note taker).
+2. Extract specs with Template 2.
+3. Test with 2 AI models.
+4. See what happens.
 
-**Goal**: Understand the workflow hands-on
+**Goal**: Understand the workflow hands-on.
 
 ### Intermediate: Optimize for your domain
-1. Adapt templates to your tech stack
-2. Create domain-specific prompt libraries
-3. Document model performance patterns
-4. Build specification quality metrics
+1. Adapt templates to your tech stack.
+2. Create domain-specific prompt libraries.
+3. Document model performance patterns.
+4. Build specification quality metrics.
 
 **Goal**: Make the framework yours
 
 ### Advanced: Scale the methodology
-1. Use specs as team documentation
-2. Build specification repositories
-3. Create org-specific AI guidelines
-4. Teach others the framework
+1. Use specs as team documentation.
+2. Build specification repositories.
+3. Create org-specific AI guidelines.
+4. Teach others the framework.
 
-**Goal**: Transform how your team builds software
+**Goal**: Transform how your team builds software.
 
 ---
 
@@ -253,36 +253,36 @@ Based on validated experiments (see: [ai-agent-spec repository](https://github.c
 Track these to know if the framework is working:
 
 ### Quantitative
-- **Spec adherence**: 85-95% across models (production-ready)
-- **Time to implementation**: 1-2 hours per model
-- **Cross-model consistency**: 80-90% feature parity
-- **Refinement cycles**: 1-2 iterations to stable specs
+- **Spec adherence**: 85-95% across models (production-ready).
+- **Time to implementation**: 1-2 hours per model.
+- **Cross-model consistency**: 80-90% feature parity.
+- **Refinement cycles**: 1-2 iterations to stable specs.
 
 ### Qualitative
-- **Confidence**: You'd deploy AI-generated code to production
-- **Reproducibility**: Rebuilding from specs matches original
-- **Clarity**: Models ask <5 clarification questions
-- **Reusability**: Specs accelerate future projects
+- **Confidence**: You'd deploy AI-generated code to production.
+- **Reproducibility**: Rebuilding from specs matches original.
+- **Clarity**: Models ask < 5 clarification questions.
+- **Reusability**: Specs accelerate future projects.
 
 ---
 
 ## 🚀 What's Next?
 
 ### Immediate actions
-1. Read `TEMPLATE-1-CONVERSATIONAL-BUILD.md`
-2. Start building something today
-3. See how far you get in 2-3 hours
+1. Read `TEMPLATE-1-CONVERSATIONAL-BUILD.md`.
+2. Start building something today.
+3. See how far you get in 2-3 hours.
 
 ### This week
-1. Complete your first conversational build
-2. Extract specifications
-3. Test with one additional AI model
+1. Complete your first conversational build.
+2. Extract specifications.
+3. Test with one additional AI model.
 
 ### This month
-1. Refine your first validated specifications
-2. Build a second project using this framework
-3. Compare your experiences
-4. Share learnings with others
+1. Refine your first validated specifications.
+2. Build a second project using this framework.
+3. Compare your experiences.
+4. Share learnings with others.
 
 ---
 
@@ -291,14 +291,14 @@ Track these to know if the framework is working:
 This framework represents a shift in thinking:
 
 ### Traditional AI-assisted engineering
-- AI helps you write code faster
-- You're still the primary builder
-- AI is a tool in your hands
+- AI helps you write code faster.
+- You're still the primary builder.
+- AI is a tool in your hands.
 
 ### Radical AI-accelerated engineering
-- AI builds complete systems
-- You're the architect and validator
-- AI is an autonomous executor
+- AI builds complete systems.
+- You're the architect and validator.
+- AI is an autonomous executor.
 
 **The difference**: You're not getting faster at coding. You're **not coding** (mostly). You're designing systems, defining requirements, and validating results.
 
@@ -326,18 +326,18 @@ This framework is **compatible with** but **independent from** [GitHub Spec Kit]
 ### Understanding the relationship
 
 **GitHub Spec Kit**:
-- Official toolkit from GitHub with CLI and slash commands
-- Interactive templates guide AI during spec creation
-- Integrated with AI coding agents (Claude, Copilot, Cursor, etc.)
-- Optimized for streamlined production workflows
-- Enforces constitutional principles through automated gates
+- Official toolkit from GitHub with CLI and slash commands.
+- Interactive templates guide AI during spec creation.
+- Integrated with AI coding agents (Claude, Copilot, Cursor, etc).
+- Optimized for streamlined production workflows.
+- Enforces constitutional principles through automated gates.
 
 **This Hybrid Framework**:
-- Educational and experimental methodology
-- Conversational prototyping → spec extraction → multi-model validation
-- Tool-agnostic (works with any AI model)
-- Emphasizes learning and empirical validation
-- Produces Spec Kit-compatible artifacts
+- Educational and experimental methodology.
+- Conversational prototyping → spec extraction → multi-model validation.
+- Tool-agnostic (works with any AI model).
+- Emphasizes learning and empirical validation.
+- Produces Spec Kit-compatible artifacts.
 
 ### Think of it this way
 
@@ -350,7 +350,7 @@ This framework is **compatible with** but **independent from** [GitHub Spec Kit]
 └─────────────────────────────────────────────────────────────┘
                             ↕
 ┌─────────────────────────────────────────────────────────────┐
-│  This Framework = The Learning & Validation Lab             │
+│  This Framework = The Learning and Validation Lab             │
 │  • Use when: Learning concepts, validating approaches       │
 │  • Strength: Hands-on understanding, cross-model testing    │
 │  • Learning curve: Gentle (conversational, exploratory)     │
@@ -373,28 +373,28 @@ This framework is **compatible with** but **independent from** [GitHub Spec Kit]
 
 ---
 
-## 🎓 Best practices: Getting the Most from Both
+## 🎓 Best practices: Getting the most from both
 
 ### 1. Start here, graduate to Spec Kit
 
 **Phase 1 - Learn the Concepts** (This Framework):
 ```
-Week 1-2: Build 2-3 small projects conversationally
-Week 3: Extract specs from one successful project
-Week 4: Validate specs with 2-3 AI models
+Week 1-2: Build 2-3 small projects conversationally.
+Week 3: Extract specs from one successful project.
+Week 4: Validate specs with 2-3 AI models.
 ```
 
 **Phase 2 - Adopt the Tooling** (Spec Kit):
 ```
-Week 5: Install Spec Kit CLI
-Week 6: Practice with slash commands on new project
-Week 7: Compare experience with manual framework
-Week 8: Choose primary approach for your workflow
+Week 5: Install Spec Kit CLI.
+Week 6: Practice with slash commands on new project.
+Week 7: Compare experience with manual framework.
+Week 8: Choose primary approach for your workflow.
 ```
 
 **Why This Order**: You'll understand WHY Spec Kit commands work the way they do, making you more effective.
 
-### 2. Follow Constitutional Principles (Regardless of Tool)
+### 2. Follow Constitutional Principles (Regardless of tool)
 
 Whether using this framework or Spec Kit, these principles ensure quality:
 
@@ -403,57 +403,57 @@ Whether using this framework or Spec Kit, these principles ensure quality:
 ✅ DO: "Build authentication as standalone library"
 ❌ DON'T: "Add login to the main app"
 ```
-**Why**: Modularity enables reusability and testing
+**Why**: Modularity enables reusability and testing.
 
 #### Article III: Test-first imperative
 ```markdown
 ✅ DO: Write tests → Get approval → Implement
 ❌ DON'T: Implement → Write tests after
 ```
-**Why**: Tests define behavior before code exists
+**Why**: Tests define behavior before code exists.
 
 #### Article VII: Simplicity gate
 ```markdown
-✅ DO: Start with ≤3 modules/projects
+✅ DO: Start with ≤ 3 modules/projects
 ❌ DON'T: Create complex architecture upfront
 ```
-**Why**: Premature complexity is the root of technical debt
+**Why**: Premature complexity is the root of technical debt.
 
 #### Article VIII: Anti-abstraction gate
 ```markdown
 ✅ DO: Use Express.js directly
 ❌ DON'T: Create wrapper around Express "just in case"
 ```
-**Why**: Abstractions should emerge from real needs, not speculation
+**Why**: Abstractions should emerge from real needs, not speculation.
 
 #### Article IX: Integration-first testing
 ```markdown
 ✅ DO: Test with real PostgreSQL database
 ❌ DON'T: Mock everything in unit tests
 ```
-**Why**: Integration tests catch real-world issues unit tests miss
+**Why**: Integration tests catch real-world issues unit tests miss.
 
 **How to Apply**:
 When extracting specs (Template 2), explicitly include gates:
 ```markdown
 ### Phase -1: Pre-Implementation Gates
-- [ ] Simplicity Gate: Using ≤3 projects?
+- [ ] Simplicity Gate: Using ≤ 3 projects?
 - [ ] Anti-Abstraction Gate: Using frameworks directly?
 - [ ] Test-First Gate: Tests written before implementation?
 - [ ] Integration Gate: Real dependencies for testing?
 ```
 
-### 3. Structure Your Specs for Both Humans and AI
+### 3. Structure Your Specs for both Humans and AI
 
-**For Humans** (Readability):
-- Clear rationale and context
-- Visual examples and scenarios
-- "Why" behind every decision
+**For Humans (Readability)**:
+- Clear rationale and context.
+- Visual examples and scenarios.
+- "Why" behind every decision.
 
-**For AI** (Executability):
-- Precise acceptance criteria
-- Unambiguous constraints
-- Machine-parseable formats
+**For AI (Executability)**:
+- Precise acceptance criteria.
+- Unambiguous constraints.
+- Machine-parseable formats.
 
 **Example**:
 ```markdown
@@ -464,9 +464,9 @@ Users abandon browsing after 3 clicks. Search reduces time-to-resource
 from 2.5 minutes to 8 seconds based on user testing.
 
 **Requirements** (AI):
-- [ ] Search input: debounced 300ms, min 2 chars
+- [ ] Search input: Debounced 300ms, min 2 chars
 - [ ] Response time: <200ms for 1000+ items
-- [ ] Results: sorted by relevance score (title match > content match)
+- [ ] Results: Sorted by relevance score (title match > content match)
 - [ ] UI: Loading spinner during fetch, "No results" when empty
 - [ ] Error: Display toast on API failure, allow retry
 
@@ -484,17 +484,17 @@ Response: {
 Even if you transition to Spec Kit, keep this framework's validation approach:
 
 **Before Major Implementation**:
-1. Create specs (using Spec Kit or manually)
-2. Give same specs to Claude, GPT, and Gemini
-3. Compare the three implementations
-4. Identify where specs were ambiguous
-5. Refine specs based on findings
+1. Create specs (using Spec Kit or manually).
+2. Give same specs to Claude, GPT, and Gemini.
+3. Compare the three implementations.
+4. Identify where specs were ambiguous.
+5. Refine specs based on findings.
 
 **When to Validate**:
-- ✅ Before starting large features (>1 week work)
-- ✅ Before architectural decisions
-- ✅ When specs have many `[NEEDS CLARIFICATION]` markers
-- ✅ When introducing new team members (validate understanding)
+- ✅ Before starting large features (>1 week work).
+- ✅ Before architectural decisions.
+- ✅ When specs have many `[NEEDS CLARIFICATION]` markers.
+- ✅ When introducing new team members (validate understanding).
 
 **ROI**: 2-4 hours validation saves days of rework from misunderstood requirements.
 
@@ -507,22 +507,22 @@ Specs should evolve with your project:
 ## Post-Implementation Review (Add to specs/)
 
 **What worked**:
-- Specification X was clear → all models implemented identically
-- Constitutional gate Y caught over-engineering early
+- Specification X was clear → all models implemented identically.
+- Constitutional gate Y caught over-engineering early.
 
 **What didn't**:
-- Specification Z was ambiguous → models diverged
-- Gate W was too strict → needed justified exception
+- Specification Z was ambiguous → models diverged.
+- Gate W was too strict → needed justified exception.
 
 **Refinements**:
-- Updated specification Z with concrete examples
-- Added clarification about when gate W exceptions are valid
+- Updated specification Z with concrete examples.
+- Added clarification about when gate W exceptions are valid.
 ```
 
 **Benefits**:
-- Future specs improve based on real experience
-- Team knowledge compounds over time
-- Onboarding new members is faster (they learn from past decisions)
+- Future specs improve based on real experience.
+- Team knowledge compounds over time.
+- Onboarding new members is faster (they learn from past decisions).
 
 ### 6. Know When to Use Which Approach
 
@@ -571,9 +571,9 @@ After 3-5 projects, you'll notice patterns. Codify them:
 ### 8. Transition Path: Framework → Spec Kit
 
 **Week 1-2: Master This Framework**
-- Complete 2-3 projects using Templates 1 & 2
-- Run multi-model validation
-- Understand what makes specs good
+- Complete 2-3 projects using Templates 1 & 2.
+- Run multi-model validation.
+- Understand what makes specs good.
 
 **Week 3: Install & Explore Spec Kit**
 ```bash
@@ -588,27 +588,27 @@ specify init test-project --ai claude
 ```
 
 **Week 4: Parallel Practice**
-- Build one feature with this framework
-- Build similar feature with Spec Kit
-- Compare: speed, quality, learning curve
+- Build one feature with this framework.
+- Build similar feature with Spec Kit.
+- Compare: speed, quality, learning curve.
 
 **Week 5: Choose Your Primary**
-- Production work: Probably Spec Kit (speed & integration)
-- Experimentation: Probably this framework (flexibility)
-- Teaching: Probably this framework (hands-on understanding)
+- Production work: Probably Spec Kit (speed & integration).
+- Experimentation: Probably this framework (flexibility).
+- Teaching: Probably this framework (hands-on understanding).
 
 **Week 6+: Combine Strategically**
 ```
 Complex/Novel Feature:
-  1. Prototype conversationally (Framework Template 1)
-  2. Extract initial specs (Framework Template 2)
-  3. Formalize with Spec Kit (/speckit.specify, /speckit.plan)
-  4. Validate with multi-model (Framework Template 2)
-  5. Refine and implement (/speckit.implement)
+  1. Prototype conversationally (Framework Template 1).
+  2. Extract initial specs (Framework Template 2).
+  3. Formalize with Spec Kit (/speckit.specify, /speckit.plan).
+  4. Validate with multi-model (Framework Template 2).
+  5. Refine and implement (/speckit.implement).
 
 Standard Feature:
-  1. Use Spec Kit directly (/speckit.specify → /speckit.plan → /speckit.implement)
-  2. Skip manual steps (you've already learned the concepts)
+  1. Use Spec Kit directly (/speckit.specify → /speckit.plan → /speckit.implement).
+  2. Skip manual steps (you've already learned the concepts).
 ```
 
 ### 9. Measure success with both approaches
@@ -616,24 +616,24 @@ Standard Feature:
 Track these metrics regardless of which tool you use:
 
 **Specification Quality**:
-- [ ] Average spec adherence across AI models (target: 90%+)
-- [ ] Number of clarification questions during implementation (target: <5)
-- [ ] Implementation consistency (how similar are different AI outputs)
+- [ ] Average spec adherence across AI models (target: 90%+).
+- [ ] Number of clarification questions during implementation (target: <5).
+- [ ] Implementation consistency (how similar are different AI outputs).
 
 **Development Velocity**:
-- [ ] Time from idea to specification (target: <4 hours)
-- [ ] Time from specification to working implementation (target: <2 hours)
-- [ ] Time savings vs. traditional development (target: 80%+)
+- [ ] Time from idea to specification (target: <4 hours).
+- [ ] Time from specification to working implementation (target: <2 hours).
+- [ ] Time savings vs. traditional development (target: 80%+).
 
 **Learning & Adoption**:
-- [ ] Team member time to first successful spec (target: <1 week)
-- [ ] Percentage of team using spec-driven approach (target: 80%+)
-- [ ] Number of specs reused across projects
+- [ ] Team member time to first successful spec (target: <1 week).
+- [ ] Percentage of team using spec-driven approach (target: 80%+).
+- [ ] Number of specs reused across projects.
 
 **Quality Indicators**:
-- [ ] Bug rate in AI-generated code vs. hand-written
-- [ ] Test coverage (should be high with test-first approach)
-- [ ] Technical debt accumulation rate
+- [ ] Bug rate in AI-generated code vs. hand-written.
+- [ ] Test coverage (should be high with test-first approach).
+- [ ] Technical debt accumulation rate.
 
 ### 10. Community & Continuous Learning
 
@@ -644,14 +644,14 @@ Track these metrics regardless of which tool you use:
 - [Issue Tracker](https://github.com/github/spec-kit/issues) (learn from others' questions)
 
 **This Framework Resources**:
-- Templates in this repository
-- Your organization's implementation examples
-- Cross-model comparison data from your validations
+- Templates in this repository.
+- Your organization's implementation examples.
+- Cross-model comparison data from your validations.
 
 **Stay Updated**:
-- Watch Spec Kit repository for updates
-- Share your learnings with the community
-- Contribute improvements back to both approaches
+- Watch Spec Kit repository for updates.
+- Share your learnings with the community.
+- Contribute improvements back to both approaches.
 
 ---
 
@@ -663,9 +663,9 @@ Track these metrics regardless of which tool you use:
 > 
 > For comprehensive guidance on transitioning from this framework to GitHub Spec Kit, including:
 > - Detailed CLI command reference and slash commands mastery
-> - Template customization for teams
-> - Combining framework + Spec Kit workflows
-> - Common pitfalls and Success metrics
+> - Template customization for teams.
+> - Combining framework + Spec Kit workflows.
+> - Common pitfalls and Success metrics.
 > 
 > **See: [SPEC-KIT-BEST-PRACTICES.md](./SPEC-KIT-BEST-PRACTICES.md)**
 
@@ -714,30 +714,30 @@ Track these metrics regardless of which tool you use:
 
 ## �📚 Templates
 
-- **[Template 1: Conversational Build](./TEMPLATE-1-CONVERSATIONAL-BUILD.md)** - Build your initial implementation
-- **[Template 2: Specification Extraction](./TEMPLATE-2-SPEC-EXTRACTION.md)** - Formalize and validate specifications
+- **[Template 1: Conversational Build](./TEMPLATE-1-CONVERSATIONAL-BUILD.md)** - Build your initial implementation.
+- **[Template 2: Specification Extraction](./TEMPLATE-2-SPEC-EXTRACTION.md)** - Formalize and validate specifications.
 
 ---
 
-## 🚀 Quick Start Decision Tree
+## 🚀 Quick start decision tree
 
 **"I'm brand new to spec-driven development"**
-→ Start with **Template 1** of this framework (learn by building)
+→ Start with **Template 1** of this framework (learn by building).
 
 **"I've built a few projects, ready for formalization"**
-→ Move to **Template 2** of this framework (learn by extracting)
+→ Move to **Template 2** of this framework (learn by extracting).
 
 **"I understand specs, want production efficiency"**
-→ Install **Spec Kit** and use slash commands
+→ Install **Spec Kit** and use slash commands.
 
 **"I want to validate critical specs before committing"**
-→ Use **both**: Spec Kit for creation, this framework for multi-model validation
+→ Use **both**: Spec Kit for creation, this framework for multi-model validation.
 
 **"I'm teaching a team"**
-→ Start with this **framework** (conceptual understanding), then introduce **Spec Kit**
+→ Start with this **framework** (conceptual understanding), then introduce **Spec Kit**.
 
 **"I have existing code to reverse-engineer"**
-→ Use this **framework** exclusively (designed for extraction)
+→ Use this **framework** exclusively (designed for extraction).
 
 ---
 

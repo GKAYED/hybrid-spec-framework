@@ -1,17 +1,17 @@
 # Spec Kit best practices guide
 
-> **Learning path Position:** Advanced - Use this guide after completing Template 1 & 2, when you're ready to scale from learning to production workflows.
+> **Learning path position: Advanced**. Use this guide after completing Templates 1 & 2 or when you're ready to scale from learning to production workflows.
 
 ## Table of contents
 
-- [When to Transition to Spec Kit](#when-to-transition-to-spec-kit)
-- [Understanding Spec Kit's Philosophy](#understanding-spec-kits-philosophy)
+- [When to transition to Spec Kit](#when-to-transition-to-spec-kit)
+- [Understanding Spec Kit's philosophy](#understanding-spec-kits-philosophy)
 - [Getting started with Spec Kit CLI](#getting-started-with-spec-kit-cli)
-- [Best Practices for Using Spec Kit](#best-practices-for-using-spec-kit)
-- [Slash Commands Mastery](#slash-commands-mastery)
-- [Template Customization](#template-customization)
-- [Combining Framework + Spec Kit](#combining-framework--spec-kit)
-- [Common Pitfalls to Avoid](#common-pitfalls-to-avoid)
+- [Best practices for using Spec Kit](#best-practices-for-using-spec-kit)
+- [Slash commands mastery](#slash-commands-mastery)
+- [Template customization](#template-customization)
+- [Combining framework + Spec Kit](#combining-framework--spec-kit)
+- [Common pitfalls to avoid](#common-pitfalls-to-avoid)
 - [Success metrics](#success-metrics)
 
 ---
@@ -20,20 +20,20 @@
 
 **You're ready for Spec Kit when:**
 
-- ✅ You've completed at least 2-3 projects using this framework's templates
-- ✅ You understand the value of specifications through hands-on experience
-- ✅ Your specs consistently achieve 85%+ adherence across multiple AI models
-- ✅ You're starting projects more frequently and need efficiency
-- ✅ Your team wants standardized workflows and templates
-- ✅ You need version control integration and CI/CD automation
+- ✅ You've completed at least 2-3 projects using this framework's templates.
+- ✅ You understand the value of specifications through hands-on experience.
+- ✅ Your specs consistently achieve 85%+ adherence across multiple AI models.
+- ✅ You're starting projects more frequently and need efficiency.
+- ✅ Your team wants standardized workflows and templates.
+- ✅ You need version control integration and CI/CD automation.
 
 **You should keep using this framework when:**
 
-- 🎓 You're still learning specification-driven development principles
-- 🧪 You're experimenting with different spec structures
-- 📊 You want to validate specs across multiple AI models
-- 🔍 You're reverse-engineering existing projects to extract specs
-- 📖 You're teaching others about specification principles
+- 🎓 You're still learning specification-driven development principles.
+- 🧪 You're experimenting with different spec structures.
+- 📊 You want to validate specs across multiple AI models.
+- 🔍 You're reverse-engineering existing projects to extract specs.
+- 📖 You're teaching others about specification principles.
 
 ---
 
@@ -49,27 +49,27 @@ Your specifications should capture WHAT you want, not HOW to build it.
 Let the AI handle the implementation details.
 ```
 
-**Framework Connection:** Our Template 2 teaches you to separate intent from implementation through the conversational → spec extraction process.
+**Framework connection:** Our Template 2 teaches you to separate intent from implementation through the Conversational → Spec extraction process.
 
 #### 2. **Executable specifications**
 ```
-Specs aren't static documents—they're living instructions that:
-- Drive multi-step development workflows
-- Enable AI agents to build iteratively
-- Provide feedback loops for refinement
+Specs aren't static documents. They're living instructions that:
+- Drive multi-step development workflows.
+- Enable AI agents to build iteratively.
+- Provide feedback loops for refinement.
 ```
 
-**Framework Connection:** Our multi-model validation teaches you to measure if specs are truly "executable" by testing with different AI models.
+**Framework connection:** Our multi-model validation teaches you to measure if specs are truly "executable" by testing with different AI models.
 
 #### 3. **Multi-phase refinement**
 ```
 Spec Kit supports three development phases:
-- Greenfield: 0-to-1 new projects
-- Creative Exploration: Rapid prototyping and experimentation
-- Brownfield: Refactoring and improving existing codebases
+- Greenfield: 0-to-1 new projects.
+- Creative Exploration: Rapid prototyping and experimentation.
+- Brownfield: Refactoring and improving existing codebases.
 ```
 
-**Framework Connection:** This framework focuses on Greenfield and Creative Exploration phases—learning by building from scratch.
+**Framework connection:** This framework focuses on Greenfield and Creative Exploration phases—learning by building from scratch.
 
 ---
 
@@ -78,9 +78,9 @@ Spec Kit supports three development phases:
 ### Installation
 
 **Prerequisites:**
-- [uv](https://docs.astral.sh/uv/) package manager
-- Python 3.11+
-- Git
+- [uv](https://docs.astral.sh/uv/) package manager.
+- Python 3.11+.
+- Git.
 
 ```bash
 # Install Spec Kit globally (recommended)
@@ -115,22 +115,17 @@ specify init --here --ai copilot
 ```
 
 **Supported AI agents:**
-- `claude` - Claude Code
-- `copilot` - GitHub Copilot
-- `gemini` - Gemini CLI
-- `cursor-agent` - Cursor
-- `windsurf` - Windsurf
-- `qwen` - Qwen Code
-- And more (see [official docs](https://github.com/github/spec-kit))
+- `claude` - Claude Code.
+- `copilot` - GitHub Copilot.
+- `gemini` - Gemini CLI.
+- `cursor-agent` - Cursor.
+- `windsurf` - Windsurf.
+- `qwen` - Qwen Code.
+- And more (see [official docs](https://github.com/github/spec-kit)).
 
-**Supported AI agents:**
-- `claude` - Claude Code
-- `copilot` - GitHub Copilot
-- `gemini` - Gemini CLI
-- `cursor-agent` - Cursor
-- `windsurf` - Windsurf
-- `qwen` - Qwen Code
-- And more (see [official docs](https://github.com/github/spec-kit))
+**Step 2: Work with your AI agent**
+
+Once initialized, launch your AI coding agent in the project directory. Spec Kit's slash commands will be available through your agent's interface.
 
 **Step 3: Create your constitution**
 
@@ -138,10 +133,12 @@ Use the `/speckit.constitution` command in your AI agent to establish project pr
 
 ```
 You: /speckit.constitution Create principles focused on code quality, 
-testing standards, user experience consistency, and performance requirements
+testing standards, user experience consistency, and performance requirements.
 ```
 
 The AI will help you create a `constitution.md` file with your project's rules. Consider these questions:
+
+The constitution defines YOUR project's rules. Start with these questions:
 
 ```markdown
 # constitution.md
@@ -161,7 +158,7 @@ The AI will help you create a `constitution.md` file with your project's rules. 
 - How should errors be handled?
 ```
 
-**Framework Connection:** Use your Template 2 constitutional articles as a starting point! Copy the principles that worked well.
+**Framework connection:** Use your Template 2 constitutional articles as a starting point! Copy the principles that worked well.
 
 **Step 4: Define your specification**
 
@@ -173,20 +170,20 @@ my photos in separate photo albums. Albums are grouped by date and can
 be re-organized by dragging and dropping on the main page.
 ```
 
-Focus on the WHAT and WHY, not the tech stack yet:Focus on the WHAT and WHY, not the tech stack yet:
+Focus on the WHAT and WHY, not the tech stack yet:
 
 ```markdown
 ## Core features
-1. Photo album management - Users can create, rename, delete albums
-2. Date-based organization - Albums automatically group by date
-3. Drag-and-drop interface - Intuitive reorganization
-4. Photo preview - Tile-based display within albums
+1. Photo album management - Users can create, rename, delete albums.
+2. Date-based organization - Albums automatically group by date.
+3. Drag-and-drop interface - Intuitive reorganization.
+4. Photo preview - Tile-based display within albums.
 
 ## User interactions
-- Main page shows all albums with date labels
-- Drag album cards to reorder them
-- Click album to see photos in tile view
-- No nested albums (flat structure)
+- Main page shows all albums with date labels.
+- Drag album cards to reorder them.
+- Click album to see photos in tile view.
+- No nested albums (flat structure).
 ```
 
 **Step 5: Create implementation plan**
@@ -217,11 +214,6 @@ You: /speckit.implement
 The AI agent will work through all tasks systematically, building your application according to your constitution and specification.
 
 ---
-- Security: [Authentication, data protection]
-- Scalability: [Growth expectations]
-```
-
----
 
 ## Best practices for using Spec Kit
 
@@ -230,16 +222,16 @@ The AI agent will work through all tasks systematically, building your applicati
 Your constitution is the "operating system" for your project. Invest time upfront to define:
 
 ✅ **DO:**
-- Write specific, testable principles ("All functions must have JSDoc comments")
-- Include examples of good vs bad code
-- Reference specific libraries/frameworks by name
-- Update the constitution when you discover new patterns
+- Write specific, testable principles ("All functions must have JSDoc comments").
+- Include examples of good vs bad code.
+- Reference specific libraries/frameworks by name.
+- Update the constitution when you discover new patterns.
 
 ❌ **DON'T:**
-- Write vague principles ("Code should be clean")
-- Copy generic best practices that don't fit your project
-- Lock yourself into decisions too early—constitutions can evolve
-- Forget to document WHY a principle exists
+- Write vague principles ("Code should be clean").
+- Copy generic best practices that don't fit your project.
+- Lock yourself into decisions too early—constitutions can evolve.
+- Forget to document WHY a principle exists.
 
 **Example from our AI Agent experiment:**
 
@@ -247,8 +239,7 @@ Your constitution is the "operating system" for your project. Invest time upfron
 ## Article I: Library-first development
 When a task can be solved with a well-maintained library, we MUST use the library.
 
-Why: Our AI agent project validated this—implementations using libraries 
-(rss-parser, cheerio) achieved 95% spec adherence vs 40% for custom parsers.
+Why: Our AI agent project validated this. Implementations using libraries (rss-parser, cheerio) achieved 95% spec adherence vs 40% for custom parsers.
 
 Approved Libraries:
 - RSS parsing: rss-parser
@@ -264,10 +255,10 @@ Every requirement should have clear success criteria:
 ```markdown
 ## RSS feed processing
 The system shall fetch RSS feeds and extract articles with the following success criteria:
-- Fetch at least 10 feeds in under 30 seconds
-- Extract title, URL, date, and description from 95%+ of articles
-- Handle feed errors gracefully (log and continue processing)
-- Store deduplicated articles in SQLite database
+- Fetch at least 10 feeds in under 30 seconds.
+- Extract title, URL, date, and description from 95%+ of articles.
+- Handle feed errors gracefully (log and continue processing).
+- Store deduplicated articles in SQLite database.
 ```
 
 ❌ **Poor Specification:**
@@ -276,7 +267,7 @@ The system shall fetch RSS feeds and extract articles with the following success
 The system should be able to get RSS feeds and save them.
 ```
 
-**Framework Connection:** Use the validation checklist from Template 2 to ensure specs are measurable before importing to Spec Kit.
+**Framework connection:** Use the validation checklist from Template 2 to ensure specs are measurable before importing to Spec Kit.
 
 ### 3. **Use the plan as your thinking tool**
 
@@ -365,13 +356,13 @@ Spec Kit provides slash commands through your AI agent interface. All commands u
 **Purpose:** Create or update project governing principles and development guidelines.
 
 **When to use:**
-- At project start to establish rules
-- When AI suggests solutions that might violate principles
-- During code review to verify adherence
+- At project start to establish rules.
+- When AI suggests solutions that might violate principles.
+- During code review to verify adherence.
 
 **Example workflow:**
 ```
-You: "I want to add caching to improve performance"
+You: "I want to add caching to improve performance."
 AI: [Suggests in-memory caching with Redis]
 You: "/speckit.constitution"
 AI: [Displays Article I: Library-First, Article VIII: Use SQLite for all persistence]
@@ -383,10 +374,10 @@ AI: "Yes! Here's how to implement a cache table in SQLite..."
 **Purpose:** Define what you want to build (requirements and user stories).
 
 **When to use:**
-- Describing new features or projects
-- Clarifying feature boundaries
-- Checking if a requirement already exists
-- Validating that new ideas align with existing specs
+- Describing new features or projects.
+- Clarifying feature boundaries.
+- Checking if a requirement already exists.
+- Validating that new ideas align with existing specs.
 
 **Example workflow:**
 ```
@@ -401,32 +392,32 @@ AI: "Recommended. Here's a draft specification section..."
 **Purpose:** Create technical implementation plans with your chosen tech stack.
 
 **When to use:**
-- After defining specifications
-- Defining architecture and tech choices
-- Prioritizing what to build next
-- Checking if you're ahead/behind schedule
+- After defining specifications.
+- Defining architecture and tech choices.
+- Prioritizing what to build next.
+- Checking if you're ahead/behind schedule.
 
 **Example workflow:**
 ```
 You: "/speckit.plan - What should I work on next?"
 AI: "You're in Phase 2: RSS Processing. Next priority task is implementing
-     the deduplication algorithm (Task 2.3 in tasks.md)"
+     the deduplication algorithm (Task 2.3 in tasks.md)."
 ```
 
 ##### `/speckit.tasks`
 **Purpose:** Generate actionable task lists for implementation.
 
 **When to use:**
-- After creating implementation plan
-- Starting a coding session
-- Breaking down complex features
-- Tracking progress
+- After creating implementation plan.
+- Starting a coding session.
+- Breaking down complex features.
+- Tracking progress.
 
 **Example workflow:**
 ```
-You: "/speckit.tasks - Show incomplete tasks"
+You: "/speckit.tasks - Show incomplete tasks."
 AI: [Lists 5 open tasks]
-You: "I completed task 2.3. Mark it done and show me task 2.4 details"
+You: "I completed task 2.3. Mark it done and show me task 2.4 details."
 AI: [Updates tasks.md and provides detailed context for next task]
 ```
 
@@ -434,9 +425,9 @@ AI: [Updates tasks.md and provides detailed context for next task]
 **Purpose:** Execute all tasks to build the feature according to the plan.
 
 **When to use:**
-- After tasks are defined and ready
-- To build features systematically
-- When you want AI to work through the full implementation
+- After tasks are defined and ready.
+- To build features systematically.
+- When you want AI to work through the full implementation.
 
 **Example workflow:**
 ```
@@ -451,51 +442,51 @@ AI: [Begins working through tasks in tasks.md, implementing each according
 **Purpose:** Clarify underspecified areas before planning.
 
 **When to use:**
-- After writing initial specification
-- Before creating implementation plan
-- When you want AI to identify gaps
+- After writing initial specification.
+- Before creating implementation plan.
+- When you want AI to identify gaps.
 
 **Example workflow:**
 ```
 You: "/speckit.clarify"
 AI: "I found 3 underspecified areas:
-     1. Error handling strategy not defined
-     2. Data validation rules unclear
-     3. Performance requirements missing"
+     1. Error handling strategy not defined.
+     2. Data validation rules unclear.
+     3. Performance requirements missing."
 ```
 
 ##### `/speckit.analyze`
 **Purpose:** Cross-artifact consistency & coverage analysis.
 
 **When to use:**
-- After creating tasks, before implementing
-- To validate alignment between constitution, spec, plan, and tasks
-- Quality check before major development
+- After creating tasks, before implementing.
+- To validate alignment between constitution, spec, plan, and tasks.
+- Quality check before major development.
 
 **Example workflow:**
 ```
 You: "/speckit.analyze"
 AI: "Analysis complete:
-     ✅ All tasks map to specification requirements
-     ⚠️  2 constitutional principles not addressed in plan
-     ✅ No orphaned tasks"
+     ✅ All tasks map to specification requirements.
+     ⚠️  2 constitutional principles not addressed in plan.
+     ✅ No orphaned tasks."
 ```
 
 ##### `/speckit.checklist`
 **Purpose:** Generate custom quality checklists (like "unit tests for English").
 
 **When to use:**
-- Validating requirements completeness
-- Checking specification clarity
-- Ensuring consistency across artifacts
+- Validating requirements completeness.
+- Checking specification clarity.
+- Ensuring consistency across artifacts.
 
 **Example workflow:**
 ```
 You: "/speckit.checklist"
 AI: "Generated quality checklist:
-     Requirements completeness: 18/20 criteria met
-     Specification clarity: All requirements testable
-     Constitutional alignment: 100%"
+     Requirements completeness: 18/20 criteria met.
+     Specification clarity: All requirements testable.
+     Constitutional alignment: 100%."
 ```### Advanced slash command patterns
 
 #### Pattern 1: The constitution check
@@ -505,14 +496,14 @@ Before implementing any significant feature:
 2. [Review principles]
 3. You: "/speckit.specify - Does this feature align?"
 4. [If yes] You: "/speckit.plan - Where does it fit?"
-5. [If yes] You: "/speckit.tasks - Create task for this"
+5. [If yes] You: "/speckit.tasks - Create task for this."
 6. You: "/speckit.implement"
 ```
 
 #### Pattern 2: The spec drift detector
 When AI suggests something that feels "off":
 ```
-1. AI: "Let's add a MongoDB database for better scalability"
+1. AI: "Let's add a MongoDB database for better scalability."
 2. You: "/speckit.constitution"
 3. AI: [Shows Article I: Always use SQLite]
 4. You: "This violates our constitution. Propose an SQLite solution."
@@ -529,21 +520,6 @@ Before major implementation:
 6. You: "/speckit.analyze" [Validate consistency]
 7. You: "/speckit.checklist" [Quality check]
 8. You: "/speckit.implement" [Execute]
-```
-
-### Slash commands cheatsheet
-```
-# Core workflow commands
-/speckit.constitution    # Create/display core principles
-/speckit.specify         # Define what to build
-/speckit.plan            # Create technical implementation plan
-/speckit.tasks           # Generate actionable task list
-/speckit.implement       # Execute all tasks
-
-# Optional quality commands
-/speckit.clarify         # Identify underspecified areas
-/speckit.analyze         # Check cross-artifact consistency
-/speckit.checklist       # Generate quality validation checklist
 ```
 
 ---
@@ -588,7 +564,7 @@ specify init --template my-org-template
 
 ### Template best practices
 
-**1. Include Placeholder Sections**
+**1. Include placeholder sections**
 ```markdown
 # specification.md (Template)
 
@@ -602,7 +578,7 @@ specify init --template my-org-template
 [FILL IN: Define entities and relationships]
 ```
 
-**2. Provide Examples in Comments**
+**2. Provide examples in comments**
 ```markdown
 # constitution.md (Template)
 
@@ -620,7 +596,7 @@ Approved libraries:
 -->
 ```
 
-**3. Version Your Templates**
+**3. Version your templates**
 Track template changes so teams can adopt updates:
 ```bash
 git tag v1.0.0 -m "Initial web app template"
@@ -636,9 +612,9 @@ git push --tags
 Use both tools in sequence for maximum learning and efficiency:
 
 #### Phase 1: Learning (use this framework)
-**Tools:** Template 1 + Template 2  
-**Duration:** 2-4 projects  
-**Goal:** Build intuition for what makes good specifications
+**Tools:** Template 1 + Template 2.
+**Duration:** 2-4 projects.
+**Goal:** Build intuition for what makes good specifications.
 
 ```
 1. Pick a small project (e.g., todo app, RSS reader)
@@ -650,15 +626,15 @@ Use both tools in sequence for maximum learning and efficiency:
 ```
 
 **You'll learn:**
-- How much detail specs need
-- Which principles actually matter
-- How different AI models interpret instructions
-- What causes specification failures
+- How much detail specs need.
+- Which principles actually matter.
+- How different AI models interpret instructions.
+- What causes specification failures.
 
 #### Phase 2: Transition (hybrid approach)
-**Tools:** This Framework + Spec Kit  
-**Duration:** 2-3 projects  
-**Goal:** Apply learnings to Spec Kit workflows
+**Tools:** This Framework + Spec Kit.
+**Duration:** 2-3 projects.
+**Goal:** Apply learnings to Spec Kit workflows.
 
 ```
 1. Use Template 2 to draft initial specifications
@@ -669,35 +645,37 @@ Use both tools in sequence for maximum learning and efficiency:
 ```
 
 **You'll learn:**
-- How to translate framework specs to Spec Kit format
-- Which Spec Kit features provide most value
-- How to customize constitutions effectively
+- How to translate framework specs to Spec Kit format.
+- Which Spec Kit features provide most value.
+- How to customize constitutions effectively.
 
 #### Phase 3: Production (use Spec Kit)
-**Tools:** Spec Kit CLI + Templates
-**Duration:** Ongoing
-**Goal:** Efficient, standardized specification-driven development
+**Tools:** Spec Kit CLI + Templates.
+**Duration:** Ongoing.
+**Goal:** Efficient, standardized specification-driven development.
 
 ```
 1. specify init --template [your-org-template]
-2. Customize constitution based on project needs
-3. Write specifications (now you know what works!)
-4. Use slash commands through your AI agent for development
-5. Periodically validate with multiple models (framework approach)
-```**You'll benefit from:**
-- Fast project initialization
-- Standardized team workflows
-- CI/CD integration
-- Version-controlled specifications
+2. Customize constitution based on project needs.
+3. Write specifications (now you know what works!).
+4. Use slash commands through your AI agent for development.
+5. Periodically validate with multiple models (framework approach).
+```
+
+**You'll benefit from:**
+- Fast project initialization.
+- Standardized team workflows.
+- CI/CD integration.
+- Version-controlled specifications.
 
 ### When to return to the framework
 
 Even after adopting Spec Kit, use this framework for:
 
-- **Experimentation:** Testing new constitutional principles before standardizing
-- **Quality Audits:** Multi-model validation of critical specifications
-- **Training:** Teaching new team members specification principles
-- **Post-Mortems:** Analyzing why a project didn't meet expectations
+- **Experimentation:** Testing new constitutional principles before standardizing.
+- **Quality Audits:** Multi-model validation of critical specifications.
+- **Training:** Teaching new team members specification principles.
+- **Post-Mortems:** Analyzing why a project didn't meet expectations.
 
 ---
 

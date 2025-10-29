@@ -4,6 +4,11 @@
 
 ---
 
+> **📢 AI Disclosure**  
+> This framework documentation was drafted with AI assistance using **GitHub Copilot** and **Claude Sonnet 4.5**. All content has been human-reviewed, tested, and validated to ensure accuracy and practical applicability. The methodology itself was derived from empirical experiments documented in the [ai-agent-spec repository](https://github.com/GKAYED/ai-agent-spec).
+
+---
+
 ## 🎯 What is this?
 
 This framework teaches you how to build software using a **hybrid approach** that combines:

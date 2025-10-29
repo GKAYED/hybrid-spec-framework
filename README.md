@@ -154,7 +154,7 @@ This framework is **compatible with** but **independent from** GitHub Spec Kit:
 
 ### GitHub Spec Kit is...
 - ✅ Official production toolkit
-- ✅ CLI with slash commands (`/constitution`, `/specification`, `/plan`, `/tasks`)
+- ✅ CLI with slash commands (`/speckit.constitution`, `/speckit.specify`, `/speckit.plan`, `/speckit.tasks`, `/speckit.implement`)
 - ✅ Template-driven spec creation
 - ✅ Integrated with AI coding agents (Claude, GPT-4, Copilot)
 - ✅ Optimized for velocity and standardization

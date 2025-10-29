@@ -77,35 +77,71 @@ Spec Kit supports three development phases:
 
 ### Installation
 
-```bash
-# Install Spec Kit globally
-npm install -g @github/specify-cli
+**Prerequisites:**
+- [uv](https://docs.astral.sh/uv/) package manager
+- Python 3.11+
+- Git
 
-# Or use with npx (no installation)
-npx @github/specify-cli init
+```bash
+# Install Spec Kit globally (recommended)
+uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
+
+# Or use without installing (one-time usage)
+uvx --from git+https://github.com/github/spec-kit.git specify init <PROJECT_NAME>
+
+# Verify installation
+specify check
+```
+
+**To upgrade Spec Kit:**
+```bash
+uv tool install specify-cli --force --from git+https://github.com/github/spec-kit.git
 ```
 
 ### Your first Spec Kit project
 
 **Step 1: Initialize a new project**
 ```bash
-# Navigate to your project directory
-cd my-new-project
+# Create and initialize a new project
+specify init my-new-project
 
-# Initialize Spec Kit
-specify init
+# Or initialize with specific AI agent
+specify init my-new-project --ai copilot
+
+# Or initialize in current directory
+specify init . --ai copilot
+# Or use --here flag
+specify init --here --ai copilot
 ```
 
-This creates:
-- `.specify/` directory with configuration
-- `constitution.md` (core principles)
-- `specification.md` (technical requirements)
-- `plan.md` (implementation strategy)
-- `tasks.md` (actionable todos)
+**Supported AI agents:**
+- `claude` - Claude Code
+- `copilot` - GitHub Copilot
+- `gemini` - Gemini CLI
+- `cursor-agent` - Cursor
+- `windsurf` - Windsurf
+- `qwen` - Qwen Code
+- And more (see [official docs](https://github.com/github/spec-kit))
 
-**Step 2: Customize your constitution**
+**Supported AI agents:**
+- `claude` - Claude Code
+- `copilot` - GitHub Copilot
+- `gemini` - Gemini CLI
+- `cursor-agent` - Cursor
+- `windsurf` - Windsurf
+- `qwen` - Qwen Code
+- And more (see [official docs](https://github.com/github/spec-kit))
 
-The constitution defines YOUR project's rules. Start with these questions:
+**Step 3: Create your constitution**
+
+Use the `/speckit.constitution` command in your AI agent to establish project principles:
+
+```
+You: /speckit.constitution Create principles focused on code quality, 
+testing standards, user experience consistency, and performance requirements
+```
+
+The AI will help you create a `constitution.md` file with your project's rules. Consider these questions:
 
 ```markdown
 # constitution.md
@@ -127,39 +163,62 @@ The constitution defines YOUR project's rules. Start with these questions:
 
 **Framework Connection:** Use your Template 2 constitutional articles as a starting point! Copy the principles that worked well.
 
-**Step 3: Write your specification**
+**Step 4: Define your specification**
 
-```markdown
-# specification.md
+Use the `/speckit.specify` command to describe what you want to build:
 
-## Overview
-[Brief description of what you're building]
-
-## Core features
-1. Feature A - [What it does, not how to build it]
-2. Feature B - [Focus on user outcomes]
-3. Feature C - [Describe the value, not the code]
-
-## Data model
-[Define your entities and relationships]
-
-## User interactions
-[Describe workflows from user perspective]
-
-## Non-Functional Requirements
-- Performance: [Expected response times]
-- Security: [Authentication, data protection]
-- Scalability: [Growth expectations]
+```
+You: /speckit.specify Build an application that can help me organize 
+my photos in separate photo albums. Albums are grouped by date and can 
+be re-organized by dragging and dropping on the main page.
 ```
 
-**Step 4: Use Spec Kit's AI agent integration**
+Focus on the WHAT and WHY, not the tech stack yet:Focus on the WHAT and WHY, not the tech stack yet:
 
-```bash
-# Start an AI-powered development session
-specify chat
+```markdown
+## Core features
+1. Photo album management - Users can create, rename, delete albums
+2. Date-based organization - Albums automatically group by date
+3. Drag-and-drop interface - Intuitive reorganization
+4. Photo preview - Tile-based display within albums
 
-# The AI will read your constitution, specification, plan, and tasks
-# and help you build according to your rules
+## User interactions
+- Main page shows all albums with date labels
+- Drag album cards to reorder them
+- Click album to see photos in tile view
+- No nested albums (flat structure)
+```
+
+**Step 5: Create implementation plan**
+
+Use `/speckit.plan` to define your tech stack and architecture:
+
+```
+You: /speckit.plan Use Vite with minimal libraries. Vanilla HTML, CSS, 
+and JavaScript. Images stored locally, metadata in SQLite database.
+```
+
+**Step 6: Break down into tasks**
+
+Use `/speckit.tasks` to generate an actionable task list:
+
+```
+You: /speckit.tasks
+```
+
+**Step 7: Execute implementation**
+
+Use `/speckit.implement` to build your feature according to the plan:
+
+```
+You: /speckit.implement
+```
+
+The AI agent will work through all tasks systematically, building your application according to your constitution and specification.
+
+---
+- Security: [Authentication, data protection]
+- Scalability: [Growth expectations]
 ```
 
 ---
@@ -298,28 +357,33 @@ Spec Kit supports slash commands during AI chat sessions. Master these:
 
 ### Command reference
 
-#### `/constitution`
-**Purpose:** Display your project's core principles and rules.
+Spec Kit provides slash commands through your AI agent interface. All commands use the `/speckit.` prefix.
+
+#### Core commands (essential workflow)
+
+##### `/speckit.constitution`
+**Purpose:** Create or update project governing principles and development guidelines.
 
 **When to use:**
-- Starting a new feature to ground the conversation
-- When AI suggests a solution that might violate principles
+- At project start to establish rules
+- When AI suggests solutions that might violate principles
 - During code review to verify adherence
 
 **Example workflow:**
 ```
 You: "I want to add caching to improve performance"
 AI: [Suggests in-memory caching with Redis]
-You: "/constitution"
+You: "/speckit.constitution"
 AI: [Displays Article I: Library-First, Article VIII: Use SQLite for all persistence]
 You: "Based on our constitution, should we use SQLite for caching instead?"
 AI: "Yes! Here's how to implement a cache table in SQLite..."
 ```
 
-#### `/specification`
-**Purpose:** Reference the full technical specification.
+##### `/speckit.specify`
+**Purpose:** Define what you want to build (requirements and user stories).
 
 **When to use:**
+- Describing new features or projects
 - Clarifying feature boundaries
 - Checking if a requirement already exists
 - Validating that new ideas align with existing specs
@@ -327,94 +391,159 @@ AI: "Yes! Here's how to implement a cache table in SQLite..."
 **Example workflow:**
 ```
 You: "Can we add email notifications when new articles arrive?"
-You: "/specification"
+You: "/speckit.specify"
 AI: [Shows specification doesn't mention notifications]
 You: "This would be a new feature. Should we update the spec first?"
 AI: "Recommended. Here's a draft specification section..."
 ```
 
-#### `/plan`
-**Purpose:** Review the implementation roadmap.
+##### `/speckit.plan`
+**Purpose:** Create technical implementation plans with your chosen tech stack.
 
 **When to use:**
+- After defining specifications
+- Defining architecture and tech choices
 - Prioritizing what to build next
 - Checking if you're ahead/behind schedule
-- Deciding if a new task fits current phase
 
 **Example workflow:**
 ```
-You: "/plan - What should I work on next?"
-AI: "You're in Phase 2: RSS Processing. Next priority task is implementing 
+You: "/speckit.plan - What should I work on next?"
+AI: "You're in Phase 2: RSS Processing. Next priority task is implementing
      the deduplication algorithm (Task 2.3 in tasks.md)"
 ```
 
-#### `/tasks`
-**Purpose:** List actionable todo items.
+##### `/speckit.tasks`
+**Purpose:** Generate actionable task lists for implementation.
 
 **When to use:**
+- After creating implementation plan
 - Starting a coding session
-- Marking tasks complete
-- Breaking down a complex task
+- Breaking down complex features
+- Tracking progress
 
 **Example workflow:**
 ```
-You: "/tasks - Show incomplete tasks"
+You: "/speckit.tasks - Show incomplete tasks"
 AI: [Lists 5 open tasks]
 You: "I completed task 2.3. Mark it done and show me task 2.4 details"
 AI: [Updates tasks.md and provides detailed context for next task]
 ```
 
-#### `/update [file]`
-**Purpose:** Modify specification files during development.
+##### `/speckit.implement`
+**Purpose:** Execute all tasks to build the feature according to the plan.
 
 **When to use:**
-- You discover new requirements
-- A principle should be added/modified
-- The plan needs adjustment based on learnings
+- After tasks are defined and ready
+- To build features systematically
+- When you want AI to work through the full implementation
 
 **Example workflow:**
 ```
-You: "We need to add a rate limiting principle to avoid hammering RSS servers"
-You: "/update constitution.md"
-AI: "I'll add Article X: Rate Limiting. Here's a draft:
-
-## Article X: Respectful rate limiting
-- Wait 1 second between feed fetches
-- Implement exponential backoff for errors
-- Cache results for 15 minutes minimum
-
-Shall I commit this to constitution.md?"
+You: "/speckit.implement"
+AI: [Begins working through tasks in tasks.md, implementing each according
+     to constitution, specification, and plan]
 ```
 
-### Advanced slash command patterns
+#### Optional commands (enhanced quality)
+
+##### `/speckit.clarify`
+**Purpose:** Clarify underspecified areas before planning.
+
+**When to use:**
+- After writing initial specification
+- Before creating implementation plan
+- When you want AI to identify gaps
+
+**Example workflow:**
+```
+You: "/speckit.clarify"
+AI: "I found 3 underspecified areas:
+     1. Error handling strategy not defined
+     2. Data validation rules unclear
+     3. Performance requirements missing"
+```
+
+##### `/speckit.analyze`
+**Purpose:** Cross-artifact consistency & coverage analysis.
+
+**When to use:**
+- After creating tasks, before implementing
+- To validate alignment between constitution, spec, plan, and tasks
+- Quality check before major development
+
+**Example workflow:**
+```
+You: "/speckit.analyze"
+AI: "Analysis complete:
+     ✅ All tasks map to specification requirements
+     ⚠️  2 constitutional principles not addressed in plan
+     ✅ No orphaned tasks"
+```
+
+##### `/speckit.checklist`
+**Purpose:** Generate custom quality checklists (like "unit tests for English").
+
+**When to use:**
+- Validating requirements completeness
+- Checking specification clarity
+- Ensuring consistency across artifacts
+
+**Example workflow:**
+```
+You: "/speckit.checklist"
+AI: "Generated quality checklist:
+     Requirements completeness: 18/20 criteria met
+     Specification clarity: All requirements testable
+     Constitutional alignment: 100%"
+```### Advanced slash command patterns
 
 #### Pattern 1: The constitution check
 Before implementing any significant feature:
 ```
-1. You: "/constitution"
+1. You: "/speckit.constitution"
 2. [Review principles]
-3. You: "/specification - Does this feature align?"
-4. [If yes] You: "/plan - Where does it fit?"
-5. [If yes] You: "/tasks - Create task for this"
+3. You: "/speckit.specify - Does this feature align?"
+4. [If yes] You: "/speckit.plan - Where does it fit?"
+5. [If yes] You: "/speckit.tasks - Create task for this"
+6. You: "/speckit.implement"
 ```
 
 #### Pattern 2: The spec drift detector
 When AI suggests something that feels "off":
 ```
 1. AI: "Let's add a MongoDB database for better scalability"
-2. You: "/constitution"
+2. You: "/speckit.constitution"
 3. AI: [Shows Article I: Always use SQLite]
 4. You: "This violates our constitution. Propose an SQLite solution."
 ```
 
-#### Pattern 3: The living documentation flow
-As you learn during development:
+#### Pattern 3: The quality validation flow
+Before major implementation:
 ```
-1. You: [Discover that feed parsing needs custom error handling]
-2. You: "/update specification.md - Add error handling requirements"
-3. AI: [Drafts new section]
-4. You: "/update plan.md - Add error handling task to Phase 2"
-5. You: "/tasks - Create task: Implement RSS error handling"
+1. You: "/speckit.specify" [Write initial requirements]
+2. You: "/speckit.clarify" [Identify gaps]
+3. [Address gaps in specification]
+4. You: "/speckit.plan" [Create technical plan]
+5. You: "/speckit.tasks" [Generate task list]
+6. You: "/speckit.analyze" [Validate consistency]
+7. You: "/speckit.checklist" [Quality check]
+8. You: "/speckit.implement" [Execute]
+```
+
+### Slash commands cheatsheet
+```
+# Core workflow commands
+/speckit.constitution    # Create/display core principles
+/speckit.specify         # Define what to build
+/speckit.plan            # Create technical implementation plan
+/speckit.tasks           # Generate actionable task list
+/speckit.implement       # Execute all tasks
+
+# Optional quality commands
+/speckit.clarify         # Identify underspecified areas
+/speckit.analyze         # Check cross-artifact consistency
+/speckit.checklist       # Generate quality validation checklist
 ```
 
 ---
@@ -545,19 +674,17 @@ Use both tools in sequence for maximum learning and efficiency:
 - How to customize constitutions effectively
 
 #### Phase 3: Production (use Spec Kit)
-**Tools:** Spec Kit CLI + Templates  
-**Duration:** Ongoing  
+**Tools:** Spec Kit CLI + Templates
+**Duration:** Ongoing
 **Goal:** Efficient, standardized specification-driven development
 
 ```
 1. specify init --template [your-org-template]
 2. Customize constitution based on project needs
-3. Write specifications (now you know What works!)
-4. Use specify chat for AI-powered development
+3. Write specifications (now you know what works!)
+4. Use slash commands through your AI agent for development
 5. Periodically validate with multiple models (framework approach)
-```
-
-**You'll benefit from:**
+```**You'll benefit from:**
 - Fast project initialization
 - Standardized team workflows
 - CI/CD integration
@@ -765,11 +892,32 @@ specify export                    # Export specs to markdown
 
 ### Slash commands cheatsheet
 ```
-/constitution          # Display core principles
-/specification         # Show full technical spec
-/plan                  # View implementation roadmap
-/tasks                 # List actionable todos
-/update [file]         # Modify a spec file
+# Core workflow commands
+/speckit.constitution    # Create/display core principles
+/speckit.specify         # Define what to build
+/speckit.plan            # Create technical implementation plan
+/speckit.tasks           # Generate actionable task list
+/speckit.implement       # Execute all tasks
+
+# Optional quality commands
+/speckit.clarify         # Identify underspecified areas
+/speckit.analyze         # Check cross-artifact consistency
+/speckit.checklist       # Generate quality validation checklist
+```
+
+### CLI commands reference
+```bash
+# Installation
+uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
+
+# Project initialization
+specify init <PROJECT_NAME>           # Create new project
+specify init --ai copilot my-project  # Specify AI agent
+specify init . --ai claude            # Initialize in current directory
+specify init --here --ai gemini       # Alternative syntax
+
+# System check
+specify check                         # Verify installed tools
 ```
 
 ### File structure reference

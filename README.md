@@ -32,31 +32,31 @@ This framework teaches you how to build software using a **hybrid approach** tha
 ### Six key differentiators
 
 #### 1. **Different scope: Methodology vs. tooling**
-- **Spec kit**: Production CLI tool with slash commands, templates, and AI agent integration.
+- **Spec Kit**: Production CLI tool with slash commands, templates, and AI agent integration.
 - **This framework**: Educational methodology teaching specification principles through hands-on practice.
 
 **Why it matters**: You need to understand *why* specifications work before efficiently *producing* them with tools.
 
 #### 2. **Different audience: Learners vs. practitioners**
-- **Spec kit**: Developers ready to standardize specification-driven workflows at scale.
+- **Spec Kit**: Developers ready to standardize specification-driven workflows at scale.
 - **This Framework**: Developers discovering specification-driven development for the first time.
 
 **The bridge (Audience overlap)**: Learners who use this framework become practitioners who adopt Spec Kit.
 
 #### 3. **Different structure: Reverse vs. forward**
-- **Spec kit**: Forward workflow (write specs → build code).
+- **Spec Kit**: Forward workflow (write specs → build code).
 - **This Framework**: Reverse workflow (build code → extract specs → validate → refine).
 
 **Why reverse works for learning**: It's easier to recognize good specifications by comparing against working implementations than to write them from scratch.
 
 #### 4. **Unique validation approach: Multi-model testing**
-- **Spec kit**: Single AI agent builds from your specifications.
+- **Spec Kit**: Single AI agent builds from your specifications.
 - **This framework**: 2-3 AI models build independently, revealing specification ambiguities through divergent implementations.
 
 **Empirical evidence**: Our [ai-agent-spec experiment](https://github.com/GKAYED/ai-agent-spec) showed Claude (95%) and GPT-5 (90%) adherence vs Gemini (40%). Multi-model testing revealed these differences.
 
 #### 5. **Different purpose: Education vs. efficiency**
-- **Spec kit**: Maximize development velocity with standardized workflows.
+- **Spec Kit**: Maximize development velocity with standardized workflows.
 - **This framework**: Maximize learning through experimentation and validation.
 
 **The progression**: Learn with this framework (5-13 hours/project) → Graduate to Spec Kit (2-4 hours/project after mastery).

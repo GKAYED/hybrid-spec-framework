@@ -747,7 +747,7 @@ The app should have user accounts and authentication.
 ✅ **Solution:** 
 ```bash
 # After completing a feature
-specify chat "/update specification.md - Document feature X as implemented"
+# Use your AI agent to update documentation through conversation
 git add .specify/
 git commit -m "docs: Update specs for feature X"
 ```
@@ -863,7 +863,7 @@ Share your learnings:
 ```bash
 specify init                      # Initialize new project
 specify init --template [name]    # Use a template
-specify chat                      # Start AI development session
+# AI development through agent interface (no separate command)
 specify validate                  # Check spec file validity
 specify export                    # Export specs to markdown
 ```

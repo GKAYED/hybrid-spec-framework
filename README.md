@@ -21,6 +21,36 @@ This framework teaches you how to build software using a **hybrid approach** tha
 
 ---
 
+## 📖 What is specification-driven development (SDD)?
+
+Specification-driven development is a discipline where clear, unambiguous, and testable specifications are the source of truth that drive planning, implementation, and validation.
+
+In the AI era, those specs should be “executable” by an AI agent: precise enough that the agent can produce working code and measurable enough that you can verify outcomes.
+
+### Core ingredients
+- Constitution (principles/architecture): non-negotiables, constraints, and quality bars.
+- Specification (features/APIs): behaviors, inputs/outputs, and acceptance criteria.
+- Plan (strategy/tech choices): languages, frameworks, and integration points.
+- Tasks (implementation breakdown): milestones and work packages.
+
+Together, these create a reusable blueprint that multiple AI models can implement consistently.
+
+### Why SDD can feel “advanced” at first
+- Mindset shift from “write code now” to “write precise contracts first.”
+- Writing good specs is a skill: unambiguous language, measurable acceptance criteria, and explicit scope boundaries.
+- Additional workflow rigor: templates, reviews, and versioning of specs alongside code.
+- Team alignment: shared vocabulary and decision records to avoid drift.
+- With AI agents: you must think in agent contracts (deterministic prompts, idempotent steps, and testability).
+
+### How this framework helps teams ramp up
+- Learn-by-doing: start conversationally, then reverse-engineer into specs you can steadily improve.
+- Guardrails and templates: Template 1 (build) and Template 2 (spec extraction/validation) make SDD concrete.
+- Multi-model validation: quickly exposes ambiguity by comparing independent implementations from different models.
+- Progressive adoption path: clear “graduation” criteria to move from learning to Spec Kit production workflows.
+- Compatibility: produces Spec Kit–compatible artifacts and links directly to the Spec Kit methodology for deeper practice.
+
+See also: Spec Kit’s excellent deep dive, “Spec-Driven Development Methodology.”
+
 ## 🤔 Why this framework exists (and why it's standalone)
 
 ### The learning gap in specification-driven development
@@ -154,7 +184,7 @@ This framework is **compatible with** but **independent from** GitHub Spec Kit:
 
 ### GitHub Spec Kit is...
 - ✅ Official production toolkit.
-- ✅ CLI with slash commands (`/constitution`, `/specification`, `/plan`, `/tasks`).
+- ✅ CLI with slash commands (`/speckit.constitution`, `/speckit.specify`, `/speckit.plan`, `/speckit.tasks`, `/speckit.implement`).
 - ✅ Template-driven spec creation.
 - ✅ Integrated with AI coding agents (Claude, GPT-4, Copilot).
 - ✅ Optimized for velocity and standardization.
@@ -401,7 +431,7 @@ This framework is released under MIT License. Use it freely for learning, teachi
 
 **Ready to begin?** Start with [Framework Quickstart](./FRAMEWORK-QUICKSTART.md) and build your first project using Template 1.
 
-**Ready to scale?** Graduate to [Spec Kit best practicesd](./SPEC-KIT-BEST-PRACTICES.md) and adopt Spec Kit for production workflows.
+**Ready to scale?** Graduate to [Spec Kit best practices](./SPEC-KIT-BEST-PRACTICES.md) and adopt Spec Kit for production workflows.
 
 ---
 

@@ -1,6 +1,10 @@
 # Hybrid specification framework
 
-**A practical methodology for AI-accelerated software development through conversational prototyping, specification extraction, and multi-model validation.**
+**The Unofficial Learning Lab for Spec-Driven Development**
+
+*Spec Kit gives you the tools. We teach you the craft.*
+
+A practical methodology for AI-accelerated software development through conversational prototyping, specification extraction, and multi-model validation.
 
 ---
 
@@ -18,6 +22,13 @@ This framework teaches you how to build software using a **hybrid approach** tha
 3. **Multi-Model Validation**: Test specifications across multiple AI models empirically.
 
 **Result**: Production-ready specifications that multiple AI models can execute with 90%+ consistency.
+
+**Your Learning Journey:**
+- 🎓 **Learn by building**, not just reading
+- 🔬 **Empirically validate** your specs with multi-model testing
+- 🔄 **Reverse engineering pedagogy**: Build → Extract → Validate → Refine
+- 📈 **Graduate to Spec Kit** when you achieve 85%+ adherence across models
+- 🧪 **Risk-free sandbox** for practicing specification craft before production
 
 ---
 
@@ -57,7 +68,17 @@ See also: Spec Kit’s excellent deep dive, “Spec-Driven Development Methodolo
 
 **The Problem**: Production tools like [GitHub Spec Kit](https://github.com/github/spec-kit) are optimized for developers who already understand specification principles. But how do you *learn* those principles?
 
-**This Framework's Answer**: Learn by doing and build conversationally, extract specifications from what worked, validate empirically with multiple AI models.
+**Spec Kit's Value**: Production CLI with slash commands, templates, automated workflows, and Git integration for teams ready to ship spec-driven code at scale.
+
+**The Missing Piece**: A learning pathway. A safe space to practice. Empirical feedback on specification quality.
+
+**This Framework's Answer**: Learn by building conversationally, extract specifications from what worked, validate empirically with multiple AI models, graduate when metrics prove you're ready.
+
+**The Analogy**:
+- **Spec Kit** = Professional IDE (VS Code) for production
+- **This Framework** = Coding bootcamp teaching you the craft
+
+**You're not choosing one or the other—you're using both in sequence.**
 
 ### Six key differentiators
 
@@ -71,7 +92,7 @@ See also: Spec Kit’s excellent deep dive, “Spec-Driven Development Methodolo
 - **Spec Kit**: Developers ready to standardize specification-driven workflows at scale.
 - **This Framework**: Developers discovering specification-driven development for the first time.
 
-**The bridge (Audience overlap)**: Learners who use this framework become practitioners who adopt Spec Kit.
+**The bridge**: Learners who use this framework become practitioners who adopt Spec Kit.
 
 #### 3. **Different structure: Reverse vs. forward**
 - **Spec Kit**: Forward workflow (write specs → build code).
@@ -79,11 +100,13 @@ See also: Spec Kit’s excellent deep dive, “Spec-Driven Development Methodolo
 
 **Why reverse works for learning**: It's easier to recognize good specifications by comparing against working implementations than to write them from scratch.
 
-#### 4. **Unique validation approach: Multi-model testing**
+#### 4. **Unique validation approach: Multi-model testing** 🔬
 - **Spec Kit**: Single AI agent builds from your specifications.
 - **This framework**: 2-3 AI models build independently, revealing specification ambiguities through divergent implementations.
 
 **Empirical evidence**: Our [ai-agent-spec experiment](https://github.com/GKAYED/ai-agent-spec) showed Claude (95%) and GPT-5 (90%) adherence vs Gemini (40%). Multi-model testing revealed these differences.
+
+**Why this matters**: Single-agent success doesn't prove spec quality. Divergent implementations expose ambiguity you can't see otherwise.
 
 #### 5. **Different purpose: Education vs. efficiency**
 - **Spec Kit**: Maximize development velocity with standardized workflows.
@@ -91,12 +114,59 @@ See also: Spec Kit’s excellent deep dive, “Spec-Driven Development Methodolo
 
 **The progression**: Learn with this framework (5-13 hours/project) → Graduate to Spec Kit (2-4 hours/project after mastery).
 
-#### 6. **Evolution path: Independent → Complementary**
+#### 6. **Evolution path: Learning Lab → Production**
 - **Phase 1 (Now)**: Standalone framework for learning specification principles.
 - **Phase 2 (Future)**: Complementary resource. "Learn with this framework, Scale with Spec Kit".
-- **Phase 3 (Aspirational)**: Lightweight integration as Spec Kit's "Learning Lab" section.
+- **Phase 3 (Aspirational)**: Official "Learning Lab" section within Spec Kit ecosystem.
 
 **Why Standalone First**: Allows rapid iteration on teaching methodology without requiring Spec Kit maintainer approval for each educational experiment.
+
+---
+
+## 🎯 Why Choose This Framework?
+
+### What Makes It Different
+
+| Feature | This Framework | Spec Kit | Traditional Dev |
+|---------|---------------|----------|-----------------|
+| **Learning Curve** | Beginner-friendly | Assumes expertise | N/A |
+| **Workflow** | Reverse (Build → Spec) | Forward (Spec → Code) | Code-only |
+| **Validation** | Multi-model empirical | Single agent | Manual testing |
+| **Feedback** | Measurable adherence % | Build success/fail | Subjective review |
+| **Purpose** | Learn the craft | Production velocity | Ship features |
+| **Risk** | Safe sandbox | Production stakes | High stakes |
+| **Time Investment** | 5-13 hrs/project | 2-4 hrs/project | 40-80 hrs/project |
+| **Graduation Path** | Clear metrics (85%+) | Already graduated | N/A |
+
+### Your Unique Value Propositions
+
+#### 🔬 **Empirical Validation (Not Available in Spec Kit)**
+Test your specs with 2-3 AI models and get **measurable feedback**:
+- Claude achieves 95%? Great spec.
+- Gemini only 40%? Ambiguity exposed.
+- **You learn from divergence**, not guesswork.
+
+#### 🔄 **Reverse Engineering Pedagogy (Not Available Anywhere)**
+Build first, extract specs second:
+- Lower barrier to entry (build is easier than spec)
+- Learn what good specs look like by comparison
+- Validate against your working implementation
+- **Concrete reference** instead of abstract principles
+
+#### 📈 **Progressive Mastery with Clear Graduation**
+Know exactly when you're ready for production:
+- Start: Learn conversationally (Template 1)
+- Practice: Extract & validate (Template 2)
+- Measure: 85%+ adherence across models?
+- Graduate: You're Spec Kit ready
+- **No guessing if you're "good enough"**
+
+#### 🧪 **Risk-Free Learning Lab**
+Practice without production consequences:
+- Experiment on side projects
+- Fail fast, learn faster
+- Build confidence before high stakes
+- **Spec Kit for learning, not just shipping**
 
 ---
 
@@ -113,6 +183,8 @@ See also: Spec Kit’s excellent deep dive, “Spec-Driven Development Methodolo
   - Decision tree for choosing approaches.
 
 **Read this first** to understand The big picture.
+
+> Executive summary for leadership: see the "Executive summary (for leaders)" section in `FRAMEWORK-QUICKSTART.md` for a concise, non-technical briefing you can use in onboarding and pilot proposals.
 
 ---
 
@@ -161,20 +233,29 @@ See also: Spec Kit’s excellent deep dive, “Spec-Driven Development Methodolo
 
 ## 🚀 Quick Start
 
-### Complete beginner
+### Complete beginner (The Learning Path)
 1. Read [Framework Quickstart](./FRAMEWORK-QUICKSTART.md) (20 minutes).
 2. Open [Template 1 - Conversational Build](./TEMPLATE-1-CONVERSATIONAL-BUILD.md).
 3. Build something small using the prompts (2-3 hours).
+4. **Goal**: Working implementation you understand deeply.
 
-### Have a working project
+### Have a working project (Extraction & Validation)
 1. Open [Template 2 - Spec Extraction](./TEMPLATE-2-SPEC-EXTRACTION.md).
 2. Use the extraction prompt to create specifications.
-3. Validate with 2-3 AI models.
+3. Validate with 2-3 AI models (Claude, GPT, Gemini).
+4. **Goal**: Measure adherence rate and identify ambiguities.
 
-### Ready for production scale
+### Ready for production scale (Graduation Criteria)
+**You're ready when:**
+- ✅ You've completed 2-3 projects using this framework
+- ✅ Your specs achieve **85%+ adherence** across 2+ AI models
+- ✅ You understand why your specs succeed or fail empirically
+- ✅ You can write specifications *before* building (forward workflow)
+
+**Then graduate to:**
 1. Read [Spec Kit best practices](./SPEC-KIT-BEST-PRACTICES.md).
 2. Install [GitHub Spec Kit](https://github.com/github/spec-kit).
-3. Apply your validated specifications to real projects.
+3. Apply your validated specifications to real projects with production velocity.
 
 ---
 
@@ -247,6 +328,12 @@ This framework is based on real experiments with proven results:
 - ⚠️ Model selection matters. Validation prevented 40% adherence disaster with Gemini.
 
 **Key Learning**: Cross-model validation reveals specification quality issues that single-model development misses.
+
+**Why This Matters for You**:
+- **Empirical feedback** on your spec quality (not subjective opinions)
+- **Measurable graduation criteria** (85%+ adherence = ready for Spec Kit)
+- **Risk identification** before production (catch ambiguity early)
+- **Confidence** that your specs are truly unambiguous
 
 **Constitutional Principles Validated**:
 - ✅ Article I (Library-First): 95% adherence when libraries specified.
@@ -433,6 +520,10 @@ This framework is released under MIT License. Use it freely for learning, teachi
 
 **Ready to scale?** Graduate to [Spec Kit best practices](./SPEC-KIT-BEST-PRACTICES.md) and adopt Spec Kit for production workflows.
 
+**Remember**: This isn't an either/or choice. You're not picking between this framework and Spec Kit. You're using this framework to **become someone who can effectively use Spec Kit**. 
+
+We're the bootcamp. Spec Kit is your career.
+
 ---
 
-*Learn with this framework. Scale with Spec Kit. Build exceptional software with AI.*
+*Learn the craft with this framework. Scale production with Spec Kit. Build exceptional software with AI.*

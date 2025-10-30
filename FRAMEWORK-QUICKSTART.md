@@ -1,6 +1,8 @@
 # Hybrid specification development framework
 
-**A practical approach to AI-accelerated engineering: Build fast, formalize smart, validate empirically.**
+**The Unofficial Learning Lab for Spec-Driven Development**
+
+*A practical approach to AI-accelerated engineering: Build fast, formalize smart, validate empirically.*
 
 ---
 
@@ -13,11 +15,14 @@ This framework teaches you how to build software using a **hybrid approach** tha
 
 **Result**: Production-ready specifications that multiple AI models can execute with 90%+ consistency.
 
+**Your Path**: Learn by building → Measure empirically → Graduate to [Spec Kit](https://github.com/github/spec-kit) when ready.
+
 ---
 
 ## 🤔 Why does this matter?
 
-### Traditional AI-assisted development
+### The Problem: Trapped Knowledge
+**Traditional AI-assisted development:**
 You: "Add a search feature"
 AI: *Writes code*
 You: "Actually, make it filter by date too"
@@ -27,33 +32,39 @@ AI: *Modifies again*
 
 **Result**: It works, but the knowledge is trapped in your conversation history. Next time you need search, you start over.
 
-### Specification-driven development
+### The Solution: Executable Specifications
+**Specification-driven development:**
 You: Build minimal prototype → Extract specifications → Validate with multiple AIs  
 **Result**: Reusable blueprint that ANY AI can execute. Build once, generate infinitely.
 
-### The hybrid advantage
+### The Framework Advantage: Learn by Doing
 Instead of choosing between "conversational fast" and "specification rigorous", you get both:
-- Prototype at conversational speed ⚡.
-- Formalize into specifications 📋.
-- Validate across AI models ✅.
-- Deploy with confidence 🚀.
+- 🏗️ Prototype at conversational speed (low barrier to entry).
+- 📋 Formalize into specifications (capture knowledge).
+- 🔬 Validate across AI models empirically (measure quality).
+- 📈 Graduate to production tools (Spec Kit) with confidence.
+
+**Most importantly**: You learn specification craft through **reverse engineering** (build → extract) instead of starting from abstract principles.
 
 ---
 
 ## 📊 When should you use this?
 
 ### ✅ Perfect for:
+- **Learning spec-driven development** - You want to understand the craft before using production tools.
 - **New projects** where you're exploring the problem space.
-- **Complex features** that need to be reproducible.
+- **Complex features** that need to be reproducible across AI models.
 - **Team projects** where specifications serve as documentation.
-- **Long-term systems** that will evolve over time.
-- **Learning AI capabilities** empirically rather than theoretically.
+- **Building confidence** before adopting Spec Kit for production.
+- **Empirical validation** - You want measurable proof your specs are unambiguous.
 
 ### ⚠️ Not ideal for:
+- **Already mastered SDD** - Go straight to [Spec Kit](https://github.com/github/spec-kit) for production velocity.
 - **Throwaway prototypes** you'll never touch again.
 - **Trivial features** (< 100 lines of code).
-- **Highly regulated domains** where specifications must come first.
-- **One-time scripts** with no reuse value.
+- **Highly regulated domains** where specifications must come first (no reverse engineering allowed).
+
+**Graduation Path**: Use this framework for 2-3 projects → Achieve 85%+ adherence → Graduate to Spec Kit.
 
 ---
 
@@ -127,6 +138,18 @@ Instead of choosing between "conversational fast" and "specification rigorous", 
 **What You Get**: Validated specifications, multiple implementations, deep AI understanding.
 
 ---
+
+## 🧾 Executive summary (for leaders)
+
+A concise, non-technical summary of why this framework matters and how to adopt it.
+
+- What it is: A learning-first methodology that teaches teams how to produce clear, executable specifications through conversational prototyping, reverse specification extraction, and multi-model validation.
+- Business value: Faster, more repeatable outcomes with less rework—reduces spec ambiguity that causes wasted engineering time and buggy implementations.
+- Risk reduction: Multi-model validation exposes ambiguous requirements early, preventing a single-model lock-in and uncovering gaps that would cause production defects.
+- Time to value: 1-4 weeks (2-3 small projects) to reach working familiarity; 5-13 hours per project for learning; teams can graduate to Spec Kit for production after achieving ~85% model adherence.
+- Recommended pilot: Run 2 small, real projects using Template 1 (conversational build) and Template 2 (spec extraction + multi-model validation). Measure adherence and velocity, then adopt Spec Kit once metrics show consistent results.
+
+Keep this with your onboarding and project kickoff playbooks—it's the fastest way for leadership to understand the trade-offs and expected ROI.
 
 ## 📂 Getting started
 

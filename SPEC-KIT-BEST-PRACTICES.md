@@ -334,13 +334,13 @@ Spec Kit supports slash commands during AI chat sessions. Master these:
 
 | Command | When to Use | Example |
 |---------|-------------|---------|
-| `/constitution` | Remind AI of core principles mid-conversation | "/constitution - Should we add error logging?" |
-| `/specification` | Clarify if a feature request aligns with specs | "/specification - Is pagination mentioned?" |
-| `/plan` | Check if current task fits the roadmap | "/plan - What phase are we in?" |
-| `/tasks` | Review next actionable items | "/tasks - What's the priority?" |
-| `/update [file]` | Modify a specification file | "/update specification.md - Add pagination" |
+| `/speckit.constitution` | Remind AI of core principles mid-conversation | "/speckit.constitution - Should we add error logging?" |
+| `/speckit.specification` | Clarify if a feature request aligns with specs | "/speckit.specification - Is pagination mentioned?" |
+| `/speckit.plan` | Check if current task fits the roadmap | "/speckit.plan - What phase are we in?" |
+| `/speckit.tasks` | Review next actionable items | "/speckit.tasks - What's the priority?" |
+| `/speckit.update [file]` | Modify a specification file | "/speckit.update specification.md - Add pagination" |
 
-**Pro Tip:** Use `/constitution` frequently! It's easy for AI conversations to drift from your core principles.
+**Pro Tip:** Use `/speckit.constitution` frequently! It's easy for AI conversations to drift from your core principles.
 
 ---
 
@@ -738,7 +738,7 @@ The app should have user accounts and authentication.
 
 ❌ **Problem:** Long AI conversation drifts from original specifications.
 
-✅ **Solution:** Use `/constitution` every 5-10 messages to re-ground the AI.
+✅ **Solution:** Use `/speckit.constitution` every 5-10 messages to re-ground the AI.
 
 ### 4. **Forgetting to update specs**
 

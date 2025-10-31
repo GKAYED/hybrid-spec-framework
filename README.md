@@ -1,6 +1,6 @@
 # Hybrid specification framework
 
-**The Unofficial Learning Lab for Spec-Driven Development**
+**The unofficial learning lab for Spec-Driven Development**
 
 *Spec Kit gives you the tools. We teach you the craft.*
 
